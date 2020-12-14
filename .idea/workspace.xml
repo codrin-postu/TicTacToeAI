@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d238ffe-f8d1-4414-baa4-f3950de14166" name="Default Changelist" comment="" />
+    <list default="true" id="3d238ffe-f8d1-4414-baa4-f3950de14166" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/src/tictactoe/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Initial setup/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Initial setup/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/src/tictactoe/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/src/tictactoe/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/test/TicTacToeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/test/TicTacToeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/course-remote-info.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,7 +24,18 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1leFVo5EOFNfh9LIpD31jowWYFt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -25,6 +48,26 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
     <property name="show.inlinked.gradle.project.popup" value="false" />
   </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tictactoe.Main" />
+      <module name="Tic-Tac-Toe_with_AI-task_main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tictactoe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -35,11 +78,60 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607949675248</updated>
-      <workItem from="1607949676827" duration="46000" />
+      <workItem from="1607949676827" duration="7027000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="670" y="272" key="#com.intellij.ide.util.MemberChooser" timestamp="1607950047182">
+      <screen x="0" y="0" width="1728" height="1112" />
+    </state>
+    <state x="670" y="272" key="#com.intellij.ide.util.MemberChooser/0.0.1728.1112@0.0.1728.1112" timestamp="1607950047182" />
+    <state width="1685" height="305" key="GridCell.Tab.0.bottom" timestamp="1607958208025">
+      <screen x="0" y="0" width="1728" height="1112" />
+    </state>
+    <state width="1685" height="305" key="GridCell.Tab.0.bottom/0.0.1728.1112@0.0.1728.1112" timestamp="1607958208025" />
+    <state width="1685" height="305" key="GridCell.Tab.0.center" timestamp="1607958208025">
+      <screen x="0" y="0" width="1728" height="1112" />
+    </state>
+    <state width="1685" height="305" key="GridCell.Tab.0.center/0.0.1728.1112@0.0.1728.1112" timestamp="1607958208025" />
+    <state width="1685" height="305" key="GridCell.Tab.0.left" timestamp="1607958208024">
+      <screen x="0" y="0" width="1728" height="1112" />
+    </state>
+    <state width="1685" height="305" key="GridCell.Tab.0.left/0.0.1728.1112@0.0.1728.1112" timestamp="1607958208024" />
+    <state width="1685" height="305" key="GridCell.Tab.0.right" timestamp="1607958208025">
+      <screen x="0" y="0" width="1728" height="1112" />
+    </state>
+    <state width="1685" height="305" key="GridCell.Tab.0.right/0.0.1728.1112@0.0.1728.1112" timestamp="1607958208025" />
+    <state width="1685" height="376" key="GridCell.Tab.1.bottom" timestamp="1607958066423">
+      <screen x="0" y="0" width="1728" height="1112" />
+    </state>
+    <state width="1685" height="376" key="GridCell.Tab.1.bottom/0.0.1728.1112@0.0.1728.1112" timestamp="1607958066423" />
+    <state width="1685" height="376" key="GridCell.Tab.1.center" timestamp="1607958066423">
+      <screen x="0" y="0" width="1728" height="1112" />
+    </state>
+    <state width="1685" height="376" key="GridCell.Tab.1.center/0.0.1728.1112@0.0.1728.1112" timestamp="1607958066423" />
+    <state width="1685" height="376" key="GridCell.Tab.1.left" timestamp="1607958066423">
+      <screen x="0" y="0" width="1728" height="1112" />
+    </state>
+    <state width="1685" height="376" key="GridCell.Tab.1.left/0.0.1728.1112@0.0.1728.1112" timestamp="1607958066423" />
+    <state width="1685" height="376" key="GridCell.Tab.1.right" timestamp="1607958066423">
+      <screen x="0" y="0" width="1728" height="1112" />
+    </state>
+    <state width="1685" height="376" key="GridCell.Tab.1.right/0.0.1728.1112@0.0.1728.1112" timestamp="1607958066423" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Tic-Tac-Toe with AI/task/src/tictactoe/Board.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

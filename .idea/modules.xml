@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Tic-Tac-Toe with AI/task/Tic-Tac-Toe_with_AI-task.iml" filepath="$PROJECT_DIR$/.idea/modules/Tic-Tac-Toe with AI/task/Tic-Tac-Toe_with_AI-task.iml" group="TicTacToeAI/Tic-Tac-Toe_with_AI-task" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Tic-Tac-Toe with AI/task/Tic-Tac-Toe_with_AI-task_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Tic-Tac-Toe with AI/task/Tic-Tac-Toe_with_AI-task_main.iml" group="TicTacToeAI/Tic-Tac-Toe_with_AI-task" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Tic-Tac-Toe with AI/task/Tic-Tac-Toe_with_AI-task_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Tic-Tac-Toe with AI/task/Tic-Tac-Toe_with_AI-task_test.iml" group="TicTacToeAI/Tic-Tac-Toe_with_AI-task" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TicTacToeAI.iml" filepath="$PROJECT_DIR$/.idea/modules/TicTacToeAI.iml" group="TicTacToeAI" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util.iml" group="TicTacToeAI/util" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util_main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util_main.iml" group="TicTacToeAI/util" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util_test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util_test.iml" group="TicTacToeAI/util" />
+    </modules>
+  </component>
+</project>

@@ -1,11 +1,14 @@
+import org.assertj.core.util.Lists;
+import org.hyperskill.hstest.dynamic.input.DynamicTestingMethod;
 import org.hyperskill.hstest.exception.outcomes.WrongAnswer;
 import org.hyperskill.hstest.stage.StageTest;
 import org.hyperskill.hstest.testcase.CheckResult;
-import org.hyperskill.hstest.testcase.TestCase;
+import org.hyperskill.hstest.testing.TestedProgram;
 import tictactoe.Main;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.stream.Collectors;
 
 enum FieldState {
@@ -13,12 +16,15 @@ enum FieldState {
 
     static FieldState get(char symbol) {
         switch (symbol) {
-            case 'X': return X;
-            case 'O': return O;
+            case 'X':
+                return X;
+            case 'O':
+                return O;
             case ' ':
             case '_':
                 return FREE;
-            default: return null;
+            default:
+                return null;
         }
     }
 }
@@ -40,7 +46,8 @@ class TicTacToeField {
         field = new FieldState[3][3];
         for (int row = 0; row < 3; row++) {
             for (int col = 0; col < 3; col++) {
-                field[row][col] = FieldState.get(str.charAt((row * 3 + col)));
+                field[row][col] =
+                    FieldState.get(str.charAt((row * 3 + col)));
             }
         }
     }
@@ -63,8 +70,7 @@ class TicTacToeField {
                 if (field[i][j] != other.field[i][j]) {
                     if (field[i][j] == FieldState.FREE && !improved) {
                         improved = true;
-                    }
-                    else {
+                    } else {
                         return false;
                     }
                 }
@@ -111,7 +117,7 @@ class TicTacToeField {
 
             int y = 0;
             for (String line : lines) {
-                char[] cols = new char[] {
+                char[] cols = new char[]{
                     line.charAt(2),
                     line.charAt(4),
                     line.charAt(6)
@@ -163,37 +169,23 @@ class TicTacToeField {
                 candidateField += line + "\n";
             }
         }
-
         return fields;
     }
-
 }
 
 
 class Clue {
-    String input;
-    String result;
-    String state;
-    String additionalContains;
+    int x, y;
 
-    Clue(String input, String result, String state) {
-        this(input, result, state, null);
-    }
-
-    Clue(String input, String result, String state, String additionalContains) {
-        this.input = input;
-        this.result = result;
-        this.state = state;
-        this.additionalContains = additionalContains;
+    Clue(int x, int y) {
+        this.x = x;
+        this.y = y;
     }
 }
 
 public class TicTacToeTest extends StageTest<Clue> {
-    public TicTacToeTest() {
-        super(Main.class);
-    }
 
-    static String[] inputs = new String[] {
+    static String[] inputs = new String[]{
         "1 1", "1 2", "1 3",
         "2 1", "2 2", "2 3",
         "3 1", "3 2", "3 3"
@@ -217,194 +209,117 @@ public class TicTacToeTest extends StageTest<Clue> {
         return fullInput;
     }
 
-    @Override
-    public List<TestCase<Clue>> generate() {
-        return List.of(
-            new TestCase<Clue>()
-                .setInput("_XXOO_OX_\n1 1")
-                .setAttach(new Clue(
-                    "_XXOO_OX_", "XXXOO_OX_", "X wins")),
+    @DynamicTestingMethod
+    CheckResult basicTest(){
+        String output;
 
-            new TestCase<Clue>()
-                .setInput("_XXOO_OX_\n1 3\n1 1")
-                .setAttach(new Clue(
-                    "_XXOO_OX_", "XXXOO_OX_", "X wins",
-                    "This cell is occupied! Choose another one!")),
+        TestedProgram main = new TestedProgram(Main.class);
+        main.start();
 
-            new TestCase<Clue>()
-                .setInput("_XXOO_OX_\n1 4\n1 1")
-                .setAttach(new Clue(
-                    "_XXOO_OX_", "XXXOO_OX_", "X wins",
-                    "Coordinates should be from 1 to 3!")),
+        int i = 0;
+        for (String input : inputs) {
+            String fullMoveInput = iterateCells(input);
 
-            new TestCase<Clue>()
-                .setInput("_XXOO_OX_\none\n1 1")
-                .setAttach(new Clue(
-                    "_XXOO_OX_", "XXXOO_OX_", "X wins",
-                    "You should enter numbers!")),
+            String[] strNums = input.split(" ");
+            int x = Integer.parseInt(strNums[0]);
+            int y = Integer.parseInt(strNums[1]);
 
-            new TestCase<Clue>()
-                .setInput("_XXOO_OX_\none three\n1 1")
-                .setAttach(new Clue(
-                    "_XXOO_OX_", "XXXOO_OX_", "X wins",
-                    "You should enter numbers!")),
-
-            new TestCase<Clue>()
-                .setInput("_XXOO_OX_\n2 3")
-                .setAttach(new Clue(
-                    "_XXOO_OX_", "_XXOOXOX_", "Game not finished")),
-
-            new TestCase<Clue>()
-                .setInput("_XXOO_OX_\n3 3")
-                .setAttach(new Clue(
-                    "_XXOO_OX_", "_XXOO_OXX", "Game not finished")),
-
-
-
-            new TestCase<Clue>()
-                .setInput("OXXXOOOX_\n3 3")
-                .setAttach(new Clue(
-                    "OXXXOOOX_", "OXXXOOOXX", "Draw")),
-
-
-
-
-            new TestCase<Clue>()
-                .setInput("XX_XOXOO_\n1 3")
-                .setAttach(new Clue(
-                    "XX_XOXOO_", "XXOXOXOO_", "O wins")),
-
-            new TestCase<Clue>()
-                .setInput("XX_XOXOO_\n3 3")
-                .setAttach(new Clue(
-                    "XX_XOXOO_", "XX_XOXOOO", "O wins")),
-
-
-
-
-            new TestCase<Clue>()
-                .setInput("_XO_OX___\n1 1")
-                .setAttach(new Clue(
-                    "_XO_OX___", "XXO_OX___", "Game not finished")),
-
-            new TestCase<Clue>()
-                .setInput("_XO_OX___\n2 1")
-                .setAttach(new Clue(
-                    "_XO_OX___", "_XOXOX___", "Game not finished")),
-
-            new TestCase<Clue>()
-                .setInput("_XO_OX___\n3 1")
-                .setAttach(new Clue(
-                    "_XO_OX___", "_XO_OXX__", "Game not finished")),
-
-            new TestCase<Clue>()
-                .setInput("_XO_OX___\n3 2")
-                .setAttach(new Clue(
-                    "_XO_OX___", "_XO_OX_X_", "Game not finished")),
-
-            new TestCase<Clue>()
-                .setInput("_XO_OX___\n3 3")
-                .setAttach(new Clue(
-                    "_XO_OX___", "_XO_OX__X", "Game not finished")),
-
-
-
-
-            new TestCase<Clue>()
-                .setInput("_XO_OX__X\n1 1")
-                .setAttach(new Clue(
-                    "_XO_OX__X", "OXO_OX__X", "Game not finished")),
-
-            new TestCase<Clue>()
-                .setInput("_XO_OX__X\n2 1")
-                .setAttach(new Clue(
-                    "_XO_OX__X", "_XOOOX__X", "Game not finished")),
-
-            new TestCase<Clue>()
-                .setInput("_XO_OX__X\n3 1")
-                .setAttach(new Clue(
-                    "_XO_OX__X", "_XO_OXO_X", "O wins")),
-
-            new TestCase<Clue>()
-                .setInput("_XO_OX__X\n3 2")
-                .setAttach(new Clue(
-                    "_XO_OX__X", "_XO_OX_OX", "Game not finished")),
-
-
-
-            new TestCase<Clue>()
-                .setInput("XO_OXOX__\n1 3")
-                .setAttach(new Clue(
-                    "XO_OXOX__", "XOXOXOX__", "X wins")),
-
-            new TestCase<Clue>()
-                .setInput("XO_OXOX__\n3 2")
-                .setAttach(new Clue(
-                    "XO_OXOX__", "XO_OXOXX_", "Game not finished")),
-
-            new TestCase<Clue>()
-                .setInput("XO_OXOX__\n3 3")
-                .setAttach(new Clue(
-                    "XO_OXOX__", "XO_OXOX_X", "X wins"))
-
-        );
-    }
-
-    @Override
-    public CheckResult check(String reply, Clue clue) {
-
-        List<TicTacToeField> fields = TicTacToeField.parseAll(reply);
-
-        if (fields.size() != 2) {
-            return new CheckResult(false,
-                "Output should contain 2 fields, found: " + fields.size());
-        }
-
-        TicTacToeField curr = fields.get(0);
-        TicTacToeField next = fields.get(1);
-
-        TicTacToeField correctCurr = new TicTacToeField(clue.input);
-        TicTacToeField correctNext = new TicTacToeField(clue.result);
-
-        List<String> lines = reply.lines()
-            .map(String::trim)
-            .filter(line -> line.length() != 0)
-            .collect(Collectors.toList());
-
-        String lastLine = lines.get(lines.size() - 1);
-
-        if (!lastLine.equals(clue.state)) {
-            return CheckResult.wrong(
-                "The final result is wrong. Should be \""
-                    + clue.state + "\", found: \"" + lastLine + "\""
-            );
-        }
-
-        if (clue.additionalContains != null) {
-            if (!reply.contains(clue.additionalContains)) {
-                return CheckResult.wrong(
-                    "Output should contain a line \""
-                        + clue.additionalContains + "\", but this line wasn't found."
-                );
+            if (i % 2 == 1) {
+                // mix with incorrect data
+                fullMoveInput = "4 " + i + "\n" + fullMoveInput;
             }
-        }
 
-        if (!curr.equalTo(correctCurr)) {
-            return new CheckResult(false,
-                "The first field is not equal to the input field " + clue.input);
-        }
+            String fullGameInput = "";
+            for (int j = 0; j < 9; j++) {
+                fullGameInput += fullMoveInput;
+            }
 
-        if (curr.equalTo(next)) {
-            return new CheckResult(false,
-                "The first field is equals to the second, " +
-                    "but should be different");
-        }
+            output = main.execute(fullGameInput);
 
-        if (!next.equalTo(correctNext)) {
-            return new CheckResult(false,
-                "The first field is correct, but the second is not");
+            List<TicTacToeField> fields = TicTacToeField.parseAll(output);
+
+            if (main.isFinished() && (output.contains("draw") || output.contains("wins"))){
+                return CheckResult.correct();
+            }
+
+            if (fields.size() == 0) {
+                return new CheckResult(false, "No fields found");
+            }
+
+            for (int j = 1; j < fields.size(); j++) {
+                TicTacToeField curr = fields.get(j - 1);
+                TicTacToeField next = fields.get(j);
+
+                if (!(curr.equalTo(next) || curr.hasNextAs(next))) {
+                    return new CheckResult(false,
+                        "For two fields following each " +
+                            "other one is not a continuation " +
+                            "of the other (they differ more than in two places).");
+                }
+            }
+
+            if (!output.contains("Making move level \"easy\"")) {
+                return new CheckResult(false,
+                    "No \"Making move level \"easy\"\" line in output");
+            }
+            i++;
         }
 
         return CheckResult.correct();
+    }
+
+    @DynamicTestingMethod
+    CheckResult testOfEasyDifficulty() {
+        int win = 0, draw = 0, lose = 0;
+        int result;
+        for (int i = 0; i < 50; i++) {
+            result = testGameSession();
+            if (result == -1) {
+                return CheckResult.wrong("An error in process of the game was found");
+            } else if (result == 0) {
+                draw++;
+            } else if (result == 1) {
+                win++;
+            } else if (result == 2) {
+                lose++;
+            }
+        }
+        if (win > 13) {
+            return CheckResult.correct();
+        } else {
+            return CheckResult.wrong("The difficulty of your AI is too high." +
+                "Make it easier.\n" +
+                "If you are sure the AI difficulty is fine, try to rerun the test.");
+        }
+    }
+
+    int testGameSession() {
+        List<String> inputs = Lists.newArrayList(
+            "1 1", "1 2", "1 3",
+            "2 1", "2 2", "2 3",
+            "3 1", "3 2", "3 3");
+        String output = "";
+
+        TestedProgram main = new TestedProgram(Main.class);
+        main.start();
+        while (!main.isFinished()) {
+            int randomIndex = new Random().nextInt(inputs.size());
+            output = main.execute(inputs.get(randomIndex));
+            inputs.remove(randomIndex);
+        }
+
+        if (!(output.toLowerCase().contains("wins") || output.toLowerCase().contains("draw"))) {
+            return -1;
+        }
+
+        if (output.toLowerCase().contains("x wins")) {
+            return 1;
+        } else if (output.toLowerCase().contains("o wins")) {
+            return 2;
+        } else if (output.toLowerCase().contains("draw")) {
+            return 0;
+        }
+
+        return -1;
     }
 }
