@@ -44,10 +44,12 @@ class TicTacToeField {
 
     TicTacToeField(String str) {
         field = new FieldState[3][3];
+        str = str.replace("\"", "");
+
         for (int row = 0; row < 3; row++) {
             for (int col = 0; col < 3; col++) {
                 field[row][col] =
-                    FieldState.get(str.charAt((row * 3 + col)));
+                    FieldState.get(str.charAt(((2 - row) * 3 + col)));
             }
         }
     }
@@ -169,8 +171,10 @@ class TicTacToeField {
                 candidateField += line + "\n";
             }
         }
+
         return fields;
     }
+
 }
 
 
@@ -184,6 +188,9 @@ class Clue {
 }
 
 public class TicTacToeTest extends StageTest<Clue> {
+    public TicTacToeTest() throws Exception {
+        super(Main.class);
+    }
 
     static String[] inputs = new String[]{
         "1 1", "1 2", "1 3",
@@ -202,81 +209,26 @@ public class TicTacToeTest extends StageTest<Clue> {
         if (index == -1) {
             return "";
         }
-        String fullInput = "";
+        StringBuilder fullInput = new StringBuilder();
         for (int i = index; i < index + 9; i++) {
-            fullInput += inputs[i % inputs.length] + "\n";
+            fullInput.append(inputs[i % inputs.length]).append("\n");
         }
-        return fullInput;
+        return fullInput.toString();
     }
 
-    @DynamicTestingMethod
-    CheckResult basicTest(){
-        String output;
-
-        TestedProgram main = new TestedProgram(Main.class);
-        main.start();
-
-        int i = 0;
-        for (String input : inputs) {
-            String fullMoveInput = iterateCells(input);
-
-            String[] strNums = input.split(" ");
-            int x = Integer.parseInt(strNums[0]);
-            int y = Integer.parseInt(strNums[1]);
-
-            if (i % 2 == 1) {
-                // mix with incorrect data
-                fullMoveInput = "4 " + i + "\n" + fullMoveInput;
-            }
-
-            String fullGameInput = "";
-            for (int j = 0; j < 9; j++) {
-                fullGameInput += fullMoveInput;
-            }
-
-            output = main.execute(fullGameInput);
-
-            List<TicTacToeField> fields = TicTacToeField.parseAll(output);
-
-            if (main.isFinished() && (output.contains("draw") || output.contains("wins"))){
-                return CheckResult.correct();
-            }
-
-            if (fields.size() == 0) {
-                return new CheckResult(false, "No fields found");
-            }
-
-            for (int j = 1; j < fields.size(); j++) {
-                TicTacToeField curr = fields.get(j - 1);
-                TicTacToeField next = fields.get(j);
-
-                if (!(curr.equalTo(next) || curr.hasNextAs(next))) {
-                    return new CheckResult(false,
-                        "For two fields following each " +
-                            "other one is not a continuation " +
-                            "of the other (they differ more than in two places).");
-                }
-            }
-
-            if (!output.contains("Making move level \"easy\"")) {
-                return new CheckResult(false,
-                    "No \"Making move level \"easy\"\" line in output");
-            }
-            i++;
-        }
-
-        return CheckResult.correct();
-    }
 
     @DynamicTestingMethod
     CheckResult testOfEasyDifficulty() {
         int win = 0, draw = 0, lose = 0;
         int result;
         for (int i = 0; i < 50; i++) {
-            result = testGameSession();
+            result = testGameSession("easy easy");
             if (result == -1) {
                 return CheckResult.wrong("An error in process of the game was found");
-            } else if (result == 0) {
+            } else if (result == -2){
+                return CheckResult.wrong("Test bot ran out of input");
+            }
+            else if (result == 0) {
                 draw++;
             } else if (result == 1) {
                 win++;
@@ -287,13 +239,13 @@ public class TicTacToeTest extends StageTest<Clue> {
         if (win > 13) {
             return CheckResult.correct();
         } else {
-            return CheckResult.wrong("The difficulty of your AI is too high." +
+            return CheckResult.wrong("The difficulty of your AI is too high. " +
                 "Make it easier.\n" +
                 "If you are sure the AI difficulty is fine, try to rerun the test.");
         }
     }
 
-    int testGameSession() {
+    int testGameSession(String mode) {
         List<String> inputs = Lists.newArrayList(
             "1 1", "1 2", "1 3",
             "2 1", "2 2", "2 3",
@@ -302,10 +254,17 @@ public class TicTacToeTest extends StageTest<Clue> {
 
         TestedProgram main = new TestedProgram(Main.class);
         main.start();
+        output = main.execute("start " + mode);
         while (!main.isFinished()) {
+            if (output.contains("command:")){
+                break;
+            }
             int randomIndex = new Random().nextInt(inputs.size());
             output = main.execute(inputs.get(randomIndex));
             inputs.remove(randomIndex);
+            if (inputs.isEmpty()){
+                return -2;
+            }
         }
 
         if (!(output.toLowerCase().contains("wins") || output.toLowerCase().contains("draw"))) {
@@ -321,5 +280,114 @@ public class TicTacToeTest extends StageTest<Clue> {
         }
 
         return -1;
+    }
+
+    @DynamicTestingMethod
+    CheckResult autoTest() {
+        TestedProgram main = new TestedProgram(Main.class);
+        main.start();
+        String output = main.execute("start easy easy");
+        if (!(output.toLowerCase().contains("wins") || output.toLowerCase().contains("draw"))) {
+            return CheckResult.wrong("The game was not finished (your program did not print the result of the game).");
+        }
+
+        List<TicTacToeField> fields = TicTacToeField.parseAll(output);
+
+        if (fields.size() == 0) {
+            return CheckResult.wrong("No fields found");
+        }
+
+        for (int i = 1; i < fields.size(); i++) {
+            TicTacToeField curr = fields.get(i - 1);
+            TicTacToeField next = fields.get(i);
+
+            if (!(curr.equalTo(next) || curr.hasNextAs(next))) {
+                return new CheckResult(false,
+                    "For two fields following each " +
+                        "other one is not a continuation " +
+                        "of the other (they differ more than in two places).");
+            }
+        }
+
+        return CheckResult.correct();
+    }
+
+    // Simple test
+    @DynamicTestingMethod
+    CheckResult manualTest1() {
+        TestedProgram main = new TestedProgram(Main.class);
+        main.start();
+        main.execute("start user user");
+
+        CheckResult temp;
+        if ((temp = assertPosition(main, 0, 0, "x")) != null) return temp;
+        if ((temp = assertPosition(main, 1, 2, "o")) != null) return temp;
+        if ((temp = assertPosition(main, 1, 0, "x")) != null) return temp;
+        if ((temp = assertPosition(main, 2, 2, "o")) != null) return temp;
+        String output = main.execute("3 1");
+        if (!output.contains("wins") || !output.toLowerCase().contains("x")) {
+            return CheckResult.wrong("A win message was expected, but the game didn't stop.");
+        }
+
+        return CheckResult.correct();
+    }
+
+    // checking overlapping
+    @DynamicTestingMethod
+    CheckResult manualTest2() {
+        TestedProgram main = new TestedProgram(Main.class);
+        main.start();
+        main.execute("start user user");
+        CheckResult temp;
+        String output;
+
+        if ((temp = assertPosition(main, 0, 0, "x")) != null) return temp;
+        output = main.execute("1 1");
+        if (output.split("\n").length > 3) {
+            return CheckResult.wrong("We placed a symbol to an occupied cell, but your program didn't warned about it.");
+        }
+        output = main.execute("1 2");
+        TicTacToeField ticTacToeField = TicTacToeField.parse(output);
+        if (ticTacToeField == null) {
+            return CheckResult.wrong("The game field is incorrect");
+        }
+        if (!ticTacToeField.field[0][0].toString().toLowerCase().equals("x")) {
+            return CheckResult.wrong("The \"O\" symbol overlapped the \"X\" one.");
+        }
+
+        return CheckResult.correct();
+    }
+
+    //exit check
+    @DynamicTestingMethod
+    CheckResult exitCheck() {
+        TestedProgram main = new TestedProgram(Main.class);
+        main.start();
+
+        main.execute("exit");
+        if (!main.isFinished()) {
+            return CheckResult.wrong("Your program did't finish after \"exit\" command");
+        }
+
+        return CheckResult.correct();
+    }
+
+    CheckResult assertPosition(TestedProgram program, int a, int b, String mode) {
+        String output = program.execute((a + 1) + " " + (b + 1));
+        TicTacToeField field = TicTacToeField.parse(output);
+
+        if (field == null) {
+            return CheckResult.wrong("The game field is incorrect");
+        }
+        try {
+            if (!field.field[a][b].toString().toLowerCase().equals(mode)) {
+                return CheckResult.wrong("The " + mode.toUpperCase() + " was placed to a wrong position." +
+                    "The " + mode.toUpperCase() + " symbol was not found (" + field.field[a][b] + " instead of it).");
+            }
+        } catch (NullPointerException nullPointerException) {
+            return CheckResult.wrong("The error in the game field caused an exception in the testing system.");
+        }
+
+        return null;
     }
 }

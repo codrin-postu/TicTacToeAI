@@ -2,14 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d238ffe-f8d1-4414-baa4-f3950de14166" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/src/tictactoe/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/src/tictactoe/Computer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/src/tictactoe/Difficulty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/src/tictactoe/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/src/tictactoe/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Initial setup/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Initial setup/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/An undefeated champion/task-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/An undefeated champion/task-remote-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Easy does it/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Easy does it/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Easy does it/task-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Easy does it/task-remote-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Initial setup/task-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Initial setup/task-remote-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Signs of intelligence/task-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Signs of intelligence/task-remote-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Watch 'em fight/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Watch 'em fight/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Watch 'em fight/task-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/Watch 'em fight/task-remote-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/lesson-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/lesson-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/classes/java/main/tictactoe/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/classes/java/main/tictactoe/Board.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/classes/java/main/tictactoe/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/classes/java/main/tictactoe/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/classes/java/test/Clue.class" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/classes/java/test/Clue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/classes/java/test/FieldState.class" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/classes/java/test/FieldState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/classes/java/test/TicTacToeField.class" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/classes/java/test/TicTacToeField.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/classes/java/test/TicTacToeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/classes/java/test/TicTacToeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/reports/tests/test/classes/TicTacToeTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/reports/tests/test/classes/TicTacToeTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/test-results/test/TEST-TicTacToeTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/test-results/test/TEST-TicTacToeTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/out/production/classes/tictactoe/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/out/production/classes/tictactoe/Board.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/out/production/classes/tictactoe/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/out/production/classes/tictactoe/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/src/tictactoe/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/src/tictactoe/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/src/tictactoe/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/src/tictactoe/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/test/TicTacToeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/test/TicTacToeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/course-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/course-remote-info.yaml" afterDir="false" />
@@ -78,7 +113,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607949675248</updated>
-      <workItem from="1607949676827" duration="7027000" />
+      <workItem from="1607949676827" duration="16731000" />
     </task>
     <servers />
   </component>
@@ -86,42 +121,46 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="670" y="272" key="#com.intellij.ide.util.MemberChooser" timestamp="1607950047182">
+    <state x="670" y="272" key="#com.intellij.ide.util.MemberChooser" timestamp="1607973444614">
       <screen x="0" y="0" width="1728" height="1112" />
     </state>
-    <state x="670" y="272" key="#com.intellij.ide.util.MemberChooser/0.0.1728.1112@0.0.1728.1112" timestamp="1607950047182" />
-    <state width="1685" height="305" key="GridCell.Tab.0.bottom" timestamp="1607958208025">
+    <state x="670" y="272" key="#com.intellij.ide.util.MemberChooser/0.0.1728.1112@0.0.1728.1112" timestamp="1607973444614" />
+    <state width="1685" height="305" key="GridCell.Tab.0.bottom" timestamp="1607979423534">
       <screen x="0" y="0" width="1728" height="1112" />
     </state>
-    <state width="1685" height="305" key="GridCell.Tab.0.bottom/0.0.1728.1112@0.0.1728.1112" timestamp="1607958208025" />
-    <state width="1685" height="305" key="GridCell.Tab.0.center" timestamp="1607958208025">
+    <state width="1685" height="305" key="GridCell.Tab.0.bottom/0.0.1728.1112@0.0.1728.1112" timestamp="1607979423534" />
+    <state width="1685" height="305" key="GridCell.Tab.0.center" timestamp="1607979423534">
       <screen x="0" y="0" width="1728" height="1112" />
     </state>
-    <state width="1685" height="305" key="GridCell.Tab.0.center/0.0.1728.1112@0.0.1728.1112" timestamp="1607958208025" />
-    <state width="1685" height="305" key="GridCell.Tab.0.left" timestamp="1607958208024">
+    <state width="1685" height="305" key="GridCell.Tab.0.center/0.0.1728.1112@0.0.1728.1112" timestamp="1607979423534" />
+    <state width="1685" height="305" key="GridCell.Tab.0.left" timestamp="1607979423534">
       <screen x="0" y="0" width="1728" height="1112" />
     </state>
-    <state width="1685" height="305" key="GridCell.Tab.0.left/0.0.1728.1112@0.0.1728.1112" timestamp="1607958208024" />
-    <state width="1685" height="305" key="GridCell.Tab.0.right" timestamp="1607958208025">
+    <state width="1685" height="305" key="GridCell.Tab.0.left/0.0.1728.1112@0.0.1728.1112" timestamp="1607979423534" />
+    <state width="1685" height="305" key="GridCell.Tab.0.right" timestamp="1607979423534">
       <screen x="0" y="0" width="1728" height="1112" />
     </state>
-    <state width="1685" height="305" key="GridCell.Tab.0.right/0.0.1728.1112@0.0.1728.1112" timestamp="1607958208025" />
-    <state width="1685" height="376" key="GridCell.Tab.1.bottom" timestamp="1607958066423">
+    <state width="1685" height="305" key="GridCell.Tab.0.right/0.0.1728.1112@0.0.1728.1112" timestamp="1607979423534" />
+    <state width="1685" height="376" key="GridCell.Tab.1.bottom" timestamp="1607977226780">
       <screen x="0" y="0" width="1728" height="1112" />
     </state>
-    <state width="1685" height="376" key="GridCell.Tab.1.bottom/0.0.1728.1112@0.0.1728.1112" timestamp="1607958066423" />
-    <state width="1685" height="376" key="GridCell.Tab.1.center" timestamp="1607958066423">
+    <state width="1685" height="376" key="GridCell.Tab.1.bottom/0.0.1728.1112@0.0.1728.1112" timestamp="1607977226780" />
+    <state width="1685" height="376" key="GridCell.Tab.1.center" timestamp="1607977226780">
       <screen x="0" y="0" width="1728" height="1112" />
     </state>
-    <state width="1685" height="376" key="GridCell.Tab.1.center/0.0.1728.1112@0.0.1728.1112" timestamp="1607958066423" />
-    <state width="1685" height="376" key="GridCell.Tab.1.left" timestamp="1607958066423">
+    <state width="1685" height="376" key="GridCell.Tab.1.center/0.0.1728.1112@0.0.1728.1112" timestamp="1607977226780" />
+    <state width="1685" height="376" key="GridCell.Tab.1.left" timestamp="1607977226780">
       <screen x="0" y="0" width="1728" height="1112" />
     </state>
-    <state width="1685" height="376" key="GridCell.Tab.1.left/0.0.1728.1112@0.0.1728.1112" timestamp="1607958066423" />
-    <state width="1685" height="376" key="GridCell.Tab.1.right" timestamp="1607958066423">
+    <state width="1685" height="376" key="GridCell.Tab.1.left/0.0.1728.1112@0.0.1728.1112" timestamp="1607977226780" />
+    <state width="1685" height="376" key="GridCell.Tab.1.right" timestamp="1607977226780">
       <screen x="0" y="0" width="1728" height="1112" />
     </state>
-    <state width="1685" height="376" key="GridCell.Tab.1.right/0.0.1728.1112@0.0.1728.1112" timestamp="1607958066423" />
+    <state width="1685" height="376" key="GridCell.Tab.1.right/0.0.1728.1112@0.0.1728.1112" timestamp="1607977226780" />
+    <state x="527" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1607974149603">
+      <screen x="0" y="0" width="1728" height="1112" />
+    </state>
+    <state x="527" y="243" width="672" height="678" key="search.everywhere.popup/0.0.1728.1112@0.0.1728.1112" timestamp="1607974149603" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -130,6 +169,19 @@
           <url>file://$PROJECT_DIR$/Tic-Tac-Toe with AI/task/src/tictactoe/Board.java</url>
           <line>40</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Tic-Tac-Toe with AI/task/src/tictactoe/Main.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Tic-Tac-Toe with AI/task/src/tictactoe/Game.java</url>
+          <line>34</line>
+          <properties class="tictactoe.Game" method="nextRound">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

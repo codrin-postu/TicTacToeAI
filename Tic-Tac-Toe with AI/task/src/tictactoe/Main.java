@@ -1,78 +1,61 @@
 package tictactoe;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        prepareGame();
+        MainMenu();
     }
 
-    private static void prepareGame() {
+    private static void MainMenu() {
         Scanner scanner = new Scanner(System.in);
-        char[] cells = new char[9];
 
-        System.out.print("Enter the cells: ");
+        ArrayList<String> input = new ArrayList<>();
 
-        String input = scanner.next();
+        System.out.print("Input command: ");
 
+        input.add(scanner.next());
 
-        //Example does not assume for the input being different that the requested 9 chars
-        //Will add such validation in future.
-        for (int i = 0; i < 9; i++) {
-            cells[i] = input.charAt(i);
-
-            if (cells[i] == '_') {
-                cells[i] = ' ';
-            }
-        }
-
-        Board game = new Board(cells);
-
-        game.outputBoard();
-
-        startGame(game);
-    }
-
-    private static void startGame(Board game) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the coordinates: ");
-
-        int[] input = new int[2];
-
-        for (int i = 0; i < 2; i++) {
-            input[i] = getInput(scanner);
-            if (input[i] == -1) {
-                startGame(game);
+        switch (input.get(0)) {
+            case "exit":
                 return;
-            }
+            case "start":
+                String line = scanner.nextLine();
+                line = line.strip();
+                input.addAll(Arrays.asList(line.split(" ")));
+
+                if (input.size() != 3) {
+                    System.out.println("Bad parameters!");
+                    MainMenu();
+                }
+
+                PlayerType[] players = new PlayerType[2];
+
+                for (int i = 1; i < 3; i++) {
+                    switch (input.get(i)) {
+                        case "user":
+                            players[i - 1] = PlayerType.USER;
+                            break;
+                        case "easy":
+                            players[i - 1] = PlayerType.COMPUTER;
+                            break;
+                        default:
+                            System.out.println("Bad parameters!");
+                            MainMenu();
+                    }
+                }
+
+                Game game = new Game(players);
+                game.nextRound();
+
+                break;
+            default:
+                System.out.println("Bad parameters!");
+                MainMenu();
         }
 
-        if (!game.checkCell(input[0], input[1])) {
-            System.out.println("This cell is occupied! Choose another one!");
-            startGame(game);
-            return;
-        }
 
-        game.addCell(input[0],input[1]);
-
-        game.outputBoard();
-        game.checkBoardStatus();
-
-    }
-
-    private static int getInput(Scanner scanner) {
-        int value = -1; //means error if returned
-        if (!scanner.hasNextInt()) {
-            System.out.println("You should enter numbers!");
-            return -1;
-        }
-        value = scanner.nextInt();
-
-        if (value <= 0 || value >= 4) {
-            System.out.println("Coordinates should be from 1 to 3!");
-            return -1;
-        }
-
-        return value - 1;
     }
 }

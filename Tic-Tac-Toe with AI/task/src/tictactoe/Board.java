@@ -57,21 +57,21 @@ public class Board {
         System.out.println("---------");
     }
 
-    public void checkBoardStatus() {
+    public boolean checkBoardStatus() {
         for (int i = 0; i < 3; i++) {
             if (boardArray[i][0] == boardArray[i][1]
                     && boardArray[i][1] == boardArray[i][2]
                     && boardArray[i][0] != ' '
             ) {
                 System.out.println(boardArray[i][0] + " wins");
-                return;
+                return true;
             }
             if (boardArray[0][i] == boardArray[1][i]
                     && boardArray[1][i] == boardArray[2][i]
                     && boardArray[0][i] != ' '
             ) {
                 System.out.println(boardArray[0][i] + " wins");
-                return;
+                return true;
             }
         }
 
@@ -80,7 +80,7 @@ public class Board {
                 && boardArray[0][0] != ' '
         ) {
             System.out.println(boardArray[0][0] + " wins");
-            return;
+            return true;
         }
 
         if (boardArray[0][2] == boardArray[1][1]
@@ -88,14 +88,15 @@ public class Board {
                 && boardArray[0][2] != ' '
         ) {
             System.out.println(boardArray[0][2] + " wins");
-            return;
+            return true;
         }
 
-        if (getCellCount('X') + getCellCount('O') < 9) {
-            System.out.println("Game not finished");
-        } else {
+        if (getCellCount('X') + getCellCount('O') == 9) {
             System.out.println("Draw");
+            return true;
         }
+
+        return false;
 
     }
 }

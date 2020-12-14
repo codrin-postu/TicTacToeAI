@@ -1,4 +1,17 @@
-tictactoe/Main.java
- tictactoe.Main
+tictactoe/Difficulty.java
+ tictactoe.Difficulty
 tictactoe/Board.java
  tictactoe.Board
+tictactoe/Player.java
+ tictactoe.Player
+tictactoe/PlayerType.java
+ tictactoe.PlayerType
+tictactoe/Main.java
+ tictactoe.Main
+tictactoe/Computer.java
+ tictactoe.Computer
+tictactoe/User.java
+ tictactoe.User
+tictactoe/Game.java
+ tictactoe.Game
+ tictactoe.Game$1
