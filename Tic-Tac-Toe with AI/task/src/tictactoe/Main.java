@@ -39,16 +39,22 @@ public class Main {
                             players[i - 1] = PlayerType.USER;
                             break;
                         case "easy":
-                            players[i - 1] = PlayerType.COMPUTER;
+                            players[i - 1] = PlayerType.COMPUTER_EASY;
+                            break;
+                        case "medium":
+                            players[i - 1] = PlayerType.COMPUTER_MEDIUM;
+                            break;
+                        case "hard":
+                            players[i - 1] = PlayerType.COMPUTER_HARD;
                             break;
                         default:
                             System.out.println("Bad parameters!");
                             MainMenu();
                     }
                 }
-
                 Game game = new Game(players);
                 game.nextRound();
+                MainMenu();
 
                 break;
             default:

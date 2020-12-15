@@ -31,8 +31,6 @@ public class User extends Player {
         }
 
         board.addCell(input[0], input[1]);
-
-        if (board.checkBoardStatus()) return;
     }
 
     private static int getInput(Scanner scanner) {

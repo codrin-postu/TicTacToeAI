@@ -9,34 +9,51 @@
 Making move level "easy"
 ---------
 |       |
+|   X   |
 |       |
-| X     |
 ---------
 Making move level "easy"
 ---------
 |       |
+|   X   |
 |   O   |
-| X     |
 ---------
 Making move level "easy"
 ---------
-| X     |
+|     X |
+|   X   |
 |   O   |
-| X     |
 ---------
 Making move level "easy"
 ---------
-| X     |
-| O O   |
-| X     |
+|     X |
+| O X   |
+|   O   |
 ---------
 Making move level "easy"
 ---------
-| X     |
-| O O   |
 | X   X |
+| O X   |
+|   O   |
 ---------
 Making move level "easy"
+---------
+| X   X |
+| O X   |
+| O O   |
+---------
+Making move level "easy"
+---------
+| X   X |
+| O X X |
+| O O   |
+---------
+Making move level "easy"
+---------
+| X   X |
+| O X X |
+| O O O |
+---------
 O wins
 [1;31m
 Start test 2[0m
@@ -74,7 +91,11 @@
 |     O |
 ---------
 Enter the coordinates: > 3 1
-X wins
+---------
+| X     |
+| X   O |
+| X   O |
+---------
 X wins
 [1;31m
 Start test 4[0m
@@ -108,467 +129,52 @@
 ---------
 Making move level "easy"
 ---------
-|   X   |
 |       |
 |       |
+|     X |
 ---------
 Making move level "easy"
 ---------
-|   X   |
 |       |
 |     O |
+|     X |
 ---------
 Making move level "easy"
 ---------
-|   X   |
-|   X   |
+|       |
 |     O |
----------
-Making move level "easy"
----------
-|   X   |
-| O X   |
-|     O |
----------
-Making move level "easy"
----------
-| X X   |
-| O X   |
-|     O |
----------
-Making move level "easy"
----------
-| X X   |
-| O X   |
-| O   O |
----------
-Making move level "easy"
----------
-| X X   |
-| O X X |
-| O   O |
----------
-Making move level "easy"
-O wins
-!Input command: > start easy easy
----------
-|       |
-|       |
-|       |
----------
-Making move level "easy"
----------
-|       |
-|       |
-| X     |
----------
-Making move level "easy"
----------
-|   O   |
-|       |
-| X     |
----------
-Making move level "easy"
----------
-|   O   |
-|     X |
-| X     |
----------
-Making move level "easy"
----------
-|   O   |
-|     X |
-| X O   |
----------
-Making move level "easy"
----------
-|   O   |
-|     X |
-| X O X |
----------
-Making move level "easy"
----------
-| O O   |
-|     X |
-| X O X |
----------
-Making move level "easy"
----------
-| O O   |
 | X   X |
-| X O X |
----------
-Making move level "easy"
-O wins
-!Input command: > start easy easy
----------
-|       |
-|       |
-|       |
 ---------
 Making move level "easy"
 ---------
-| X     |
-|       |
-|       |
----------
-Making move level "easy"
----------
-| X   O |
-|       |
-|       |
----------
-Making move level "easy"
----------
-| X   O |
-|       |
-|     X |
----------
-Making move level "easy"
----------
-| X   O |
-|     O |
-|     X |
----------
-Making move level "easy"
----------
-| X X O |
-|     O |
-|     X |
----------
-Making move level "easy"
----------
-| X X O |
-|     O |
-| O   X |
----------
-Making move level "easy"
----------
-| X X O |
-| X   O |
-| O   X |
----------
-Making move level "easy"
-O wins
-!Input command: > start easy easy
----------
-|       |
-|       |
-|       |
----------
-Making move level "easy"
----------
-|     X |
-|       |
-|       |
----------
-Making move level "easy"
----------
-|     X |
 |       |
 |     O |
----------
-Making move level "easy"
----------
-|   X X |
-|       |
-|     O |
----------
-Making move level "easy"
----------
-| O X X |
-|       |
-|     O |
----------
-Making move level "easy"
----------
-| O X X |
-|       |
-| X   O |
----------
-Making move level "easy"
----------
-| O X X |
-| O     |
-| X   O |
----------
-Making move level "easy"
----------
-| O X X |
-| O     |
-| X X O |
----------
-Making move level "easy"
-O wins
-!Input command: > start easy easy
----------
-|       |
-|       |
-|       |
----------
-Making move level "easy"
----------
-|     X |
-|       |
-|       |
----------
-Making move level "easy"
----------
-| O   X |
-|       |
-|       |
----------
-Making move level "easy"
----------
-| O   X |
-|     X |
-|       |
----------
-Making move level "easy"
----------
-| O   X |
-|   O X |
-|       |
----------
-Making move level "easy"
----------
-| O   X |
-| X O X |
-|       |
----------
-Making move level "easy"
----------
-| O   X |
-| X O X |
-| O     |
----------
-Making move level "easy"
----------
-| O X X |
-| X O X |
-| O     |
----------
-Making move level "easy"
-O wins
-!Input command: > start easy easy
----------
-|       |
-|       |
-|       |
----------
-Making move level "easy"
----------
-|       |
-|       |
-| X     |
----------
-Making move level "easy"
----------
-|       |
-|   O   |
-| X     |
----------
-Making move level "easy"
----------
-|       |
-|   O X |
-| X     |
----------
-Making move level "easy"
----------
-|       |
-|   O X |
-| X   O |
----------
-Making move level "easy"
----------
-|       |
-|   O X |
-| X X O |
----------
-Making move level "easy"
-O wins
-!Input command: > start easy easy
----------
-|       |
-|       |
-|       |
----------
-Making move level "easy"
----------
-|   X   |
-|       |
-|       |
----------
-Making move level "easy"
----------
-|   X   |
-| O     |
-|       |
----------
-Making move level "easy"
----------
-|   X   |
-| O     |
-| X     |
----------
-Making move level "easy"
----------
-|   X   |
-| O     |
-| X O   |
----------
-Making move level "easy"
----------
-|   X   |
-| O X   |
-| X O   |
----------
-Making move level "easy"
----------
-|   X   |
-| O X   |
-| X O O |
----------
-Making move level "easy"
-X wins
-!Input command: > start easy easy
----------
-|       |
-|       |
-|       |
----------
-Making move level "easy"
----------
-|       |
-| X     |
-|       |
----------
-Making move level "easy"
----------
-|       |
-| X O   |
-|       |
----------
-Making move level "easy"
----------
-| X     |
-| X O   |
-|       |
----------
-Making move level "easy"
----------
-| X O   |
-| X O   |
-|       |
----------
-Making move level "easy"
-X wins
-!Input command: > start easy easy
----------
-|       |
-|       |
-|       |
----------
-Making move level "easy"
----------
-|       |
-|       |
-|     X |
----------
-Making move level "easy"
----------
-|       |
-| O     |
-|     X |
----------
-Making move level "easy"
----------
-|       |
-| O   X |
-|     X |
----------
-Making move level "easy"
----------
-| O     |
-| O   X |
-|     X |
----------
-Making move level "easy"
----------
-| O     |
-| O X X |
-|     X |
----------
-Making move level "easy"
----------
-| O     |
-| O X X |
-|   O X |
----------
-Making move level "easy"
----------
-| O     |
-| O X X |
 | X O X |
 ---------
 Making move level "easy"
 ---------
-| O O   |
-| O X X |
+|     X |
+|     O |
 | X O X |
 ---------
 Making move level "easy"
-X wins
-!Input command: > start easy easy
 ---------
-|       |
-|       |
-|       |
----------
-Making move level "easy"
----------
-|       |
-|     X |
-|       |
----------
-Making move level "easy"
----------
-|       |
-|     X |
-|     O |
----------
-Making move level "easy"
----------
-|   X   |
-|     X |
-|     O |
----------
-Making move level "easy"
----------
-|   X   |
 |   O X |
 |     O |
+| X O X |
 ---------
 Making move level "easy"
 ---------
-|   X   |
 | X O X |
 |     O |
+| X O X |
 ---------
 Making move level "easy"
 ---------
-|   X   |
 | X O X |
 |   O O |
----------
-Making move level "easy"
----------
-|   X X |
 | X O X |
-|   O O |
 ---------
-Making move level "easy"
 O wins
 !Input command: > start easy easy
 ---------
@@ -578,53 +184,58 @@
 ---------
 Making move level "easy"
 ---------
-| X     |
 |       |
-|       |
----------
-Making move level "easy"
----------
-| X   O |
-|       |
+|     X |
 |       |
 ---------
 Making move level "easy"
 ---------
-| X   O |
 |       |
-|   X   |
+|     X |
+| O     |
 ---------
 Making move level "easy"
 ---------
-| X O O |
 |       |
-|   X   |
+|   X X |
+| O     |
 ---------
 Making move level "easy"
 ---------
-| X O O |
-|   X   |
-|   X   |
+|     O |
+|   X X |
+| O     |
 ---------
 Making move level "easy"
 ---------
-| X O O |
+|     O |
+|   X X |
 | O X   |
-|   X   |
+---------
+Making move level "easy"
+---------
+|   O O |
+|   X X |
+| O X   |
+---------
+Making move level "easy"
+---------
+|   O O |
+|   X X |
+| O X X |
+---------
+Making move level "easy"
+---------
+|   O O |
+| O X X |
+| O X X |
 ---------
 Making move level "easy"
 ---------
 | X O O |
 | O X X |
-|   X   |
----------
-Making move level "easy"
----------
-| X O O |
 | O X X |
-| O X   |
 ---------
-Making move level "easy"
 X wins
 !Input command: > start easy easy
 ---------
@@ -635,578 +246,57 @@
 Making move level "easy"
 ---------
 |       |
-| X     |
 |       |
----------
-Making move level "easy"
----------
-|       |
-| X     |
-| O     |
----------
-Making move level "easy"
----------
-|     X |
-| X     |
-| O     |
----------
-Making move level "easy"
----------
-|     X |
-| X O   |
-| O     |
----------
-Making move level "easy"
----------
-| X   X |
-| X O   |
-| O     |
----------
-Making move level "easy"
----------
-| X   X |
-| X O   |
-| O   O |
----------
-Making move level "easy"
----------
-| X   X |
-| X O X |
-| O   O |
----------
-Making move level "easy"
----------
-| X O X |
-| X O X |
-| O   O |
----------
-Making move level "easy"
-Draw
-!Input command: > start easy easy
----------
-|       |
-|       |
-|       |
----------
-Making move level "easy"
----------
 |   X   |
-|       |
-|       |
 ---------
 Making move level "easy"
 ---------
-|   X   |
 |       |
-|     O |
----------
-Making move level "easy"
----------
-|   X   |
-| X     |
-|     O |
----------
-Making move level "easy"
----------
+|       |
 | O X   |
-| X     |
-|     O |
 ---------
 Making move level "easy"
 ---------
-| O X X |
-| X     |
-|     O |
----------
-Making move level "easy"
----------
-| O X X |
-| X   O |
-|     O |
----------
-Making move level "easy"
----------
-| O X X |
-| X   O |
-|   X O |
----------
-Making move level "easy"
-O wins
-!Input command: > start easy easy
----------
-|       |
-|       |
-|       |
----------
-Making move level "easy"
----------
-|       |
-|       |
 |     X |
+|       |
+| O X   |
 ---------
 Making move level "easy"
 ---------
+|     X |
 |   O   |
-|       |
-|     X |
----------
-Making move level "easy"
----------
-|   O   |
-|   X   |
-|     X |
----------
-Making move level "easy"
----------
-| O O   |
-|   X   |
-|     X |
----------
-Making move level "easy"
----------
-| O O   |
-|   X   |
-|   X X |
----------
-Making move level "easy"
----------
-| O O   |
 | O X   |
-|   X X |
 ---------
 Making move level "easy"
 ---------
-| O O X |
+|     X |
+|   O X |
 | O X   |
-|   X X |
 ---------
 Making move level "easy"
 ---------
-| O O X |
+|     X |
+|   O X |
 | O X O |
-|   X X |
----------
-Making move level "easy"
-X wins
-!Input command: > start easy easy
----------
-|       |
-|       |
-|       |
----------
-Making move level "easy"
----------
-| X     |
-|       |
-|       |
----------
-Making move level "easy"
----------
-| X     |
-| O     |
-|       |
----------
-Making move level "easy"
----------
-| X X   |
-| O     |
-|       |
----------
-Making move level "easy"
----------
-| X X   |
-| O     |
-|   O   |
----------
-Making move level "easy"
----------
-| X X   |
-| O   X |
-|   O   |
----------
-Making move level "easy"
----------
-| X X   |
-| O   X |
-|   O O |
----------
-Making move level "easy"
----------
-| X X   |
-| O X X |
-|   O O |
----------
-Making move level "easy"
-O wins
-!Input command: > start easy easy
----------
-|       |
-|       |
-|       |
----------
-Making move level "easy"
----------
-|   X   |
-|       |
-|       |
----------
-Making move level "easy"
----------
-|   X   |
-|       |
-|   O   |
----------
-Making move level "easy"
----------
-|   X X |
-|       |
-|   O   |
----------
-Making move level "easy"
----------
-|   X X |
-|       |
-| O O   |
----------
-Making move level "easy"
-X wins
-!Input command: > start easy easy
----------
-|       |
-|       |
-|       |
----------
-Making move level "easy"
----------
-| X     |
-|       |
-|       |
----------
-Making move level "easy"
----------
-| X   O |
-|       |
-|       |
----------
-Making move level "easy"
----------
-| X   O |
-|       |
-| X     |
----------
-Making move level "easy"
----------
-| X O O |
-|       |
-| X     |
----------
-Making move level "easy"
----------
-| X O O |
-|     X |
-| X     |
----------
-Making move level "easy"
----------
-| X O O |
-| O   X |
-| X     |
----------
-Making move level "easy"
----------
-| X O O |
-| O   X |
-| X X   |
----------
-Making move level "easy"
----------
-| X O O |
-| O O X |
-| X X   |
----------
-Making move level "easy"
-X wins
-!Input command: > start easy easy
----------
-|       |
-|       |
-|       |
----------
-Making move level "easy"
----------
-| X     |
-|       |
-|       |
----------
-Making move level "easy"
----------
-| X     |
-|     O |
-|       |
----------
-Making move level "easy"
----------
-| X     |
-|     O |
-|   X   |
----------
-Making move level "easy"
----------
-| X     |
-|     O |
-| O X   |
----------
-Making move level "easy"
----------
-| X     |
-|   X O |
-| O X   |
----------
-Making move level "easy"
----------
-| X     |
-| O X O |
-| O X   |
----------
-Making move level "easy"
-X wins
-!Input command: > start easy easy
----------
-|       |
-|       |
-|       |
----------
-Making move level "easy"
----------
-|       |
-|     X |
-|       |
----------
-Making move level "easy"
----------
-|       |
-|     X |
-|   O   |
----------
-Making move level "easy"
----------
-|       |
-| X   X |
-|   O   |
----------
-Making move level "easy"
----------
-| O     |
-| X   X |
-|   O   |
----------
-Making move level "easy"
----------
-| O   X |
-| X   X |
-|   O   |
----------
-Making move level "easy"
----------
-| O O X |
-| X   X |
-|   O   |
----------
-Making move level "easy"
-X wins
-!Input command: > start easy easy
----------
-|       |
-|       |
-|       |
----------
-Making move level "easy"
----------
-| X     |
-|       |
-|       |
----------
-Making move level "easy"
----------
-| X   O |
-|       |
-|       |
----------
-Making move level "easy"
----------
-| X   O |
-|       |
-| X     |
----------
-Making move level "easy"
----------
-| X   O |
-|   O   |
-| X     |
----------
-Making move level "easy"
-X wins
-!Input command: > start easy easy
----------
-|       |
-|       |
-|       |
 ---------
 Making move level "easy"
 ---------
 |     X |
-|       |
-|       |
----------
-Making move level "easy"
----------
-|     X |
-|       |
-|   O   |
----------
-Making move level "easy"
----------
-|     X |
-| X     |
-|   O   |
----------
-Making move level "easy"
----------
-|     X |
-| X   O |
-|   O   |
----------
-Making move level "easy"
----------
-|     X |
-| X   O |
-| X O   |
----------
-Making move level "easy"
----------
-|     X |
-| X O O |
-| X O   |
----------
-Making move level "easy"
----------
-|     X |
-| X O O |
 | X O X |
----------
-Making move level "easy"
-O wins
-!Input command: > start easy easy
----------
-|       |
-|       |
-|       |
+| O X O |
 ---------
 Making move level "easy"
 ---------
-|       |
-|   X   |
-|       |
+|   O X |
+| X O X |
+| O X O |
 ---------
 Making move level "easy"
 ---------
-|       |
-| O X   |
-|       |
+| X O X |
+| X O X |
+| O X O |
 ---------
-Making move level "easy"
----------
-| X     |
-| O X   |
-|       |
----------
-Making move level "easy"
----------
-| X   O |
-| O X   |
-|       |
----------
-Making move level "easy"
----------
-| X   O |
-| O X   |
-| X     |
----------
-Making move level "easy"
----------
-| X O O |
-| O X   |
-| X     |
----------
-Making move level "easy"
----------
-| X O O |
-| O X X |
-| X     |
----------
-Making move level "easy"
----------
-| X O O |
-| O X X |
-| X   O |
----------
-Making move level "easy"
-Draw
-!Input command: > start easy easy
----------
-|       |
-|       |
-|       |
----------
-Making move level "easy"
----------
-|       |
-|       |
-|   X   |
----------
-Making move level "easy"
----------
-|       |
-|       |
-|   X O |
----------
-Making move level "easy"
----------
-|       |
-|     X |
-|   X O |
----------
-Making move level "easy"
----------
-|   O   |
-|     X |
-|   X O |
----------
-Making move level "easy"
----------
-|   O   |
-|   X X |
-|   X O |
----------
-Making move level "easy"
----------
-|   O O |
-|   X X |
-|   X O |
----------
-Making move level "easy"
----------
-| X O O |
-|   X X |
-|   X O |
----------
-Making move level "easy"
----------
-| X O O |
-| O X X |
-|   X O |
----------
-Making move level "easy"
 Draw
 !Input command: > start easy easy
 ---------
@@ -1223,34 +313,27 @@
 Making move level "easy"
 ---------
 |     X |
-|     O |
+| O     |
 |       |
 ---------
 Making move level "easy"
 ---------
 |     X |
-| X   O |
-|       |
----------
-Making move level "easy"
----------
+| O     |
 |     X |
-| X   O |
-|     O |
 ---------
 Making move level "easy"
 ---------
+| O   X |
+| O     |
 |     X |
-| X   O |
-| X   O |
 ---------
 Making move level "easy"
 ---------
-|   O X |
-| X   O |
-| X   O |
+| O   X |
+| O   X |
+|     X |
 ---------
-Making move level "easy"
 X wins
 !Input command: > start easy easy
 ---------
@@ -1268,39 +351,93 @@
 ---------
 |   X   |
 |       |
-|     O |
+| O     |
 ---------
 Making move level "easy"
 ---------
 |   X   |
-| X     |
-|     O |
+|       |
+| O   X |
 ---------
 Making move level "easy"
 ---------
 |   X   |
-| X   O |
-|     O |
+|   O   |
+| O   X |
 ---------
 Making move level "easy"
 ---------
+|   X X |
+|   O   |
+| O   X |
+---------
+Making move level "easy"
+---------
+|   X X |
+| O O   |
+| O   X |
+---------
+Making move level "easy"
+---------
+| X X X |
+| O O   |
+| O   X |
+---------
+X wins
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|       |
+|       |
 |   X   |
-| X   O |
-| X   O |
+---------
+Making move level "easy"
+---------
+| O     |
+|       |
+|   X   |
 ---------
 Making move level "easy"
 ---------
 | O X   |
-| X   O |
-| X   O |
+|       |
+|   X   |
 ---------
 Making move level "easy"
 ---------
 | O X   |
-| X   O |
-| X X O |
+| O     |
+|   X   |
 ---------
 Making move level "easy"
+---------
+| O X   |
+| O   X |
+|   X   |
+---------
+Making move level "easy"
+---------
+| O X   |
+| O O X |
+|   X   |
+---------
+Making move level "easy"
+---------
+| O X   |
+| O O X |
+|   X X |
+---------
+Making move level "easy"
+---------
+| O X   |
+| O O X |
+| O X X |
+---------
 O wins
 !Input command: > start easy easy
 ---------
@@ -1317,34 +454,51 @@
 Making move level "easy"
 ---------
 |       |
-|   X   |
-| O     |
+|   X O |
+|       |
 ---------
 Making move level "easy"
 ---------
 |       |
-|   X X |
-| O     |
+| X X O |
+|       |
 ---------
 Making move level "easy"
 ---------
+|       |
+| X X O |
 |   O   |
-|   X X |
-| O     |
 ---------
 Making move level "easy"
 ---------
+|       |
+| X X O |
 |   O X |
-|   X X |
-| O     |
 ---------
 Making move level "easy"
 ---------
+| O     |
+| X X O |
 |   O X |
-|   X X |
+---------
+Making move level "easy"
+---------
+| O     |
+| X X O |
+| X O X |
+---------
+Making move level "easy"
+---------
 | O O   |
+| X X O |
+| X O X |
 ---------
 Making move level "easy"
+---------
+| O O X |
+| X X O |
+| X O X |
+---------
 X wins
 !Input command: > start easy easy
 ---------
@@ -1354,41 +508,297 @@
 ---------
 Making move level "easy"
 ---------
-| X     |
+|     X |
 |       |
 |       |
 ---------
 Making move level "easy"
 ---------
-| X     |
+| O   X |
 |       |
+|       |
+---------
+Making move level "easy"
+---------
+| O   X |
+|     X |
+|       |
+---------
+Making move level "easy"
+---------
+| O   X |
+|   O X |
+|       |
+---------
+Making move level "easy"
+---------
+| O   X |
+|   O X |
+| X     |
+---------
+Making move level "easy"
+---------
+| O   X |
+|   O X |
+| X   O |
+---------
+O wins
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|       |
+|   X   |
+|       |
+---------
+Making move level "easy"
+---------
+|     O |
+|   X   |
+|       |
+---------
+Making move level "easy"
+---------
+| X   O |
+|   X   |
+|       |
+---------
+Making move level "easy"
+---------
+| X   O |
+|   X   |
+|   O   |
+---------
+Making move level "easy"
+---------
+| X   O |
+|   X   |
+| X O   |
+---------
+Making move level "easy"
+---------
+| X   O |
+| O X   |
+| X O   |
+---------
+Making move level "easy"
+---------
+| X   O |
+| O X   |
+| X O X |
+---------
+X wins
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|   X   |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|   X   |
+|   O   |
+|       |
+---------
+Making move level "easy"
+---------
+|   X   |
+|   O X |
+|       |
+---------
+Making move level "easy"
+---------
+|   X   |
+|   O X |
 | O     |
 ---------
 Making move level "easy"
 ---------
-| X     |
-|       |
-| O X   |
----------
-Making move level "easy"
----------
-| X     |
+|   X   |
+| X O X |
 | O     |
-| O X   |
 ---------
 Making move level "easy"
 ---------
-| X     |
-| O X   |
-| O X   |
+|   X   |
+| X O X |
+| O   O |
 ---------
 Making move level "easy"
 ---------
-| X     |
-| O X   |
+|   X   |
+| X O X |
 | O X O |
 ---------
 Making move level "easy"
+---------
+| O X   |
+| X O X |
+| O X O |
+---------
+O wins
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|       |
+|   X   |
+|       |
+---------
+Making move level "easy"
+---------
+| O     |
+|   X   |
+|       |
+---------
+Making move level "easy"
+---------
+| O X   |
+|   X   |
+|       |
+---------
+Making move level "easy"
+---------
+| O X   |
+|   X O |
+|       |
+---------
+Making move level "easy"
+---------
+| O X   |
+|   X O |
+| X     |
+---------
+Making move level "easy"
+---------
+| O X   |
+| O X O |
+| X     |
+---------
+Making move level "easy"
+---------
+| O X   |
+| O X O |
+| X X   |
+---------
+X wins
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|     X |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|     X |
+| O     |
+|       |
+---------
+Making move level "easy"
+---------
+|     X |
+| O   X |
+|       |
+---------
+Making move level "easy"
+---------
+|   O X |
+| O   X |
+|       |
+---------
+Making move level "easy"
+---------
+|   O X |
+| O X X |
+|       |
+---------
+Making move level "easy"
+---------
+| O O X |
+| O X X |
+|       |
+---------
+Making move level "easy"
+---------
+| O O X |
+| O X X |
+|   X   |
+---------
+Making move level "easy"
+---------
+| O O X |
+| O X X |
+| O X   |
+---------
+O wins
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|       |
+| X     |
+|       |
+---------
+Making move level "easy"
+---------
+| O     |
+| X     |
+|       |
+---------
+Making move level "easy"
+---------
+| O     |
+| X     |
+|   X   |
+---------
+Making move level "easy"
+---------
+| O     |
+| X   O |
+|   X   |
+---------
+Making move level "easy"
+---------
+| O     |
+| X   O |
+| X X   |
+---------
+Making move level "easy"
+---------
+| O     |
+| X O O |
+| X X   |
+---------
+Making move level "easy"
+---------
+| O     |
+| X O O |
+| X X X |
+---------
 X wins
 !Input command: > start easy easy
 ---------
@@ -1406,133 +816,1004 @@
 ---------
 |       |
 | X     |
-|   O   |
+| O     |
+---------
+Making move level "easy"
+---------
+|     X |
+| X     |
+| O     |
+---------
+Making move level "easy"
+---------
+|     X |
+| X O   |
+| O     |
+---------
+Making move level "easy"
+---------
+|     X |
+| X O X |
+| O     |
+---------
+Making move level "easy"
+---------
+|     X |
+| X O X |
+| O O   |
+---------
+Making move level "easy"
+---------
+|     X |
+| X O X |
+| O O X |
+---------
+X wins
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
 ---------
 Making move level "easy"
 ---------
 | X     |
-| X     |
-|   O   |
+|       |
+|       |
 ---------
 Making move level "easy"
 ---------
+| X   O |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+| X   O |
 | X     |
+|       |
+---------
+Making move level "easy"
+---------
+| X   O |
+| X     |
+|     O |
+---------
+Making move level "easy"
+---------
+| X   O |
+| X X   |
+|     O |
+---------
+Making move level "easy"
+---------
+| X O O |
+| X X   |
+|     O |
+---------
+Making move level "easy"
+---------
+| X O O |
+| X X   |
+|   X O |
+---------
+Making move level "easy"
+---------
+| X O O |
+| X X O |
+|   X O |
+---------
+O wins
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|       |
+|       |
+| X     |
+---------
+Making move level "easy"
+---------
+|     O |
+|       |
+| X     |
+---------
+Making move level "easy"
+---------
+|     O |
+|       |
+| X X   |
+---------
+Making move level "easy"
+---------
+|     O |
+|       |
+| X X O |
+---------
+Making move level "easy"
+---------
+| X   O |
+|       |
+| X X O |
+---------
+Making move level "easy"
+---------
 | X   O |
 |   O   |
+| X X O |
+---------
+Making move level "easy"
+---------
+| X   O |
+|   O X |
+| X X O |
+---------
+Making move level "easy"
+---------
+| X O O |
+|   O X |
+| X X O |
+---------
+Making move level "easy"
+---------
+| X O O |
+| X O X |
+| X X O |
+---------
+X wins
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+| X     |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+| X O   |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+| X O   |
+|     X |
+|       |
+---------
+Making move level "easy"
+---------
+| X O O |
+|     X |
+|       |
+---------
+Making move level "easy"
+---------
+| X O O |
+|   X X |
+|       |
+---------
+Making move level "easy"
+---------
+| X O O |
+| O X X |
+|       |
+---------
+Making move level "easy"
+---------
+| X O O |
+| O X X |
+|   X   |
+---------
+Making move level "easy"
+---------
+| X O O |
+| O X X |
+|   X O |
+---------
+Making move level "easy"
+---------
+| X O O |
+| O X X |
+| X X O |
+---------
+Draw
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|       |
+| X     |
+|       |
+---------
+Making move level "easy"
+---------
+|       |
+| X   O |
+|       |
+---------
+Making move level "easy"
+---------
+|       |
+| X X O |
+|       |
+---------
+Making move level "easy"
+---------
+| O     |
+| X X O |
+|       |
+---------
+Making move level "easy"
+---------
+| O X   |
+| X X O |
+|       |
+---------
+Making move level "easy"
+---------
+| O X   |
+| X X O |
+| O     |
+---------
+Making move level "easy"
+---------
+| O X   |
+| X X O |
+| O X   |
+---------
+X wins
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|   X   |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|   X   |
+|       |
+|     O |
+---------
+Making move level "easy"
+---------
+|   X   |
+|       |
+|   X O |
+---------
+Making move level "easy"
+---------
+|   X   |
+|     O |
+|   X O |
+---------
+Making move level "easy"
+---------
+| X X   |
+|     O |
+|   X O |
+---------
+Making move level "easy"
+---------
+| X X O |
+|     O |
+|   X O |
+---------
+O wins
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|     X |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+| O   X |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+| O   X |
+|     X |
+|       |
+---------
+Making move level "easy"
+---------
+| O   X |
+|   O X |
+|       |
+---------
+Making move level "easy"
+---------
+| O   X |
+| X O X |
+|       |
+---------
+Making move level "easy"
+---------
+| O   X |
+| X O X |
+|   O   |
+---------
+Making move level "easy"
+---------
+| O X X |
+| X O X |
+|   O   |
+---------
+Making move level "easy"
+---------
+| O X X |
+| X O X |
+| O O   |
+---------
+Making move level "easy"
+---------
+| O X X |
+| X O X |
+| O O X |
+---------
+X wins
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|       |
+|       |
+| X     |
+---------
+Making move level "easy"
+---------
+|       |
+|   O   |
+| X     |
+---------
+Making move level "easy"
+---------
+|       |
+| X O   |
+| X     |
+---------
+Making move level "easy"
+---------
+|     O |
+| X O   |
+| X     |
+---------
+Making move level "easy"
+---------
+|   X O |
+| X O   |
+| X     |
+---------
+Making move level "easy"
+---------
+|   X O |
+| X O O |
+| X     |
+---------
+Making move level "easy"
+---------
+|   X O |
+| X O O |
+| X X   |
+---------
+Making move level "easy"
+---------
+|   X O |
+| X O O |
+| X X O |
+---------
+O wins
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|       |
+|       |
+|     X |
+---------
+Making move level "easy"
+---------
+|       |
+|       |
+|   O X |
+---------
+Making move level "easy"
+---------
+|       |
+|     X |
+|   O X |
+---------
+Making move level "easy"
+---------
+|       |
+| O   X |
+|   O X |
+---------
+Making move level "easy"
+---------
+| X     |
+| O   X |
+|   O X |
+---------
+Making move level "easy"
+---------
+| X     |
+| O O X |
+|   O X |
 ---------
 Making move level "easy"
 ---------
 | X   X |
-| X   O |
-|   O   |
+| O O X |
+|   O X |
+---------
+X wins
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|       |
+| X     |
+|       |
+---------
+Making move level "easy"
+---------
+|       |
+| X O   |
+|       |
+---------
+Making move level "easy"
+---------
+| X     |
+| X O   |
+|       |
+---------
+Making move level "easy"
+---------
+| X     |
+| X O O |
+|       |
 ---------
 Making move level "easy"
 ---------
 | X   X |
 | X O O |
+|       |
+---------
+Making move level "easy"
+---------
+| X O X |
+| X O O |
+|       |
+---------
+Making move level "easy"
+---------
+| X O X |
+| X O O |
+| X     |
+---------
+X wins
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|   X   |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|   X O |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|   X O |
+|     X |
+|       |
+---------
+Making move level "easy"
+---------
+|   X O |
+|   O X |
+|       |
+---------
+Making move level "easy"
+---------
+|   X O |
+|   O X |
+| X     |
+---------
+Making move level "easy"
+---------
+|   X O |
+|   O X |
+| X   O |
+---------
+Making move level "easy"
+---------
+|   X O |
+| X O X |
+| X   O |
+---------
+Making move level "easy"
+---------
+| O X O |
+| X O X |
+| X   O |
+---------
+O wins
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|       |
+| X     |
+|       |
+---------
+Making move level "easy"
+---------
+|       |
+| X     |
+| O     |
+---------
+Making move level "easy"
+---------
+|       |
+| X X   |
+| O     |
+---------
+Making move level "easy"
+---------
+|     O |
+| X X   |
+| O     |
+---------
+Making move level "easy"
+---------
+| X   O |
+| X X   |
+| O     |
+---------
+Making move level "easy"
+---------
+| X   O |
+| X X   |
+| O O   |
+---------
+Making move level "easy"
+---------
+| X X O |
+| X X   |
+| O O   |
+---------
+Making move level "easy"
+---------
+| X X O |
+| X X O |
+| O O   |
+---------
+Making move level "easy"
+---------
+| X X O |
+| X X O |
+| O O X |
+---------
+X wins
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+| X     |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+| X     |
+|       |
 |   O   |
 ---------
 Making move level "easy"
-X wins
-!Input command: > start easy easy
 ---------
+| X   X |
 |       |
-|       |
-|       |
+|   O   |
 ---------
 Making move level "easy"
 ---------
-|       |
-|   X   |
-|       |
----------
-Making move level "easy"
----------
-| O     |
-|   X   |
-|       |
----------
-Making move level "easy"
----------
-| O     |
-|   X   |
-|   X   |
----------
-Making move level "easy"
----------
-| O   O |
-|   X   |
-|   X   |
----------
-Making move level "easy"
----------
-| O   O |
-|   X   |
-|   X X |
----------
-Making move level "easy"
----------
-| O   O |
-|   X   |
-| O X X |
----------
-Making move level "easy"
----------
-| O   O |
-| X X   |
-| O X X |
----------
-Making move level "easy"
----------
-| O   O |
-| X X O |
-| O X X |
----------
-Making move level "easy"
-X wins
-!Input command: > start easy easy
----------
-|       |
-|       |
-|       |
----------
-Making move level "easy"
----------
-|       |
-|       |
-|     X |
----------
-Making move level "easy"
----------
-| O     |
-|       |
-|     X |
----------
-Making move level "easy"
----------
-| O     |
-|       |
-|   X X |
----------
-Making move level "easy"
----------
-| O     |
+| X   X |
 |     O |
-|   X X |
+|   O   |
 ---------
 Making move level "easy"
 ---------
+| X   X |
+| X   O |
+|   O   |
+---------
+Making move level "easy"
+---------
+| X   X |
+| X   O |
+|   O O |
+---------
+Making move level "easy"
+---------
+| X X X |
+| X   O |
+|   O O |
+---------
+X wins
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+| X     |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+| X     |
+|   O   |
+|       |
+---------
+Making move level "easy"
+---------
+| X     |
+|   O   |
+| X     |
+---------
+Making move level "easy"
+---------
+| X     |
+|   O   |
+| X O   |
+---------
+Making move level "easy"
+---------
+| X   X |
+|   O   |
+| X O   |
+---------
+Making move level "easy"
+---------
+| X   X |
+|   O O |
+| X O   |
+---------
+Making move level "easy"
+---------
+| X   X |
+|   O O |
+| X O X |
+---------
+Making move level "easy"
+---------
+| X O X |
+|   O O |
+| X O X |
+---------
+O wins
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|       |
+|       |
+|   X   |
+---------
+Making move level "easy"
+---------
+|     O |
+|       |
+|   X   |
+---------
+Making move level "easy"
+---------
+|     O |
+|     X |
+|   X   |
+---------
+Making move level "easy"
+---------
+| O   O |
+|     X |
+|   X   |
+---------
+Making move level "easy"
+---------
+| O X O |
+|     X |
+|   X   |
+---------
+Making move level "easy"
+---------
+| O X O |
+| O   X |
+|   X   |
+---------
+Making move level "easy"
+---------
+| O X O |
+| O   X |
+| X X   |
+---------
+Making move level "easy"
+---------
+| O X O |
+| O O X |
+| X X   |
+---------
+Making move level "easy"
+---------
+| O X O |
+| O O X |
+| X X X |
+---------
+X wins
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+| X     |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+| X     |
 | O     |
-| X   O |
+|       |
+---------
+Making move level "easy"
+---------
+| X     |
+| O     |
+|     X |
+---------
+Making move level "easy"
+---------
+| X     |
+| O   O |
+|     X |
+---------
+Making move level "easy"
+---------
+| X     |
+| O   O |
 |   X X |
 ---------
 Making move level "easy"
 ---------
-| O O   |
 | X   O |
+| O   O |
 |   X X |
 ---------
 Making move level "easy"
+---------
+| X   O |
+| O   O |
+| X X X |
+---------
+X wins
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|       |
+| X     |
+|       |
+---------
+Making move level "easy"
+---------
+|       |
+| X O   |
+|       |
+---------
+Making move level "easy"
+---------
+|   X   |
+| X O   |
+|       |
+---------
+Making move level "easy"
+---------
+|   X   |
+| X O   |
+| O     |
+---------
+Making move level "easy"
+---------
+|   X   |
+| X O   |
+| O X   |
+---------
+Making move level "easy"
+---------
+| O X   |
+| X O   |
+| O X   |
+---------
+Making move level "easy"
+---------
+| O X   |
+| X O   |
+| O X X |
+---------
+Making move level "easy"
+---------
+| O X   |
+| X O O |
+| O X X |
+---------
+Making move level "easy"
+---------
+| O X X |
+| X O O |
+| O X X |
+---------
+Draw
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|     X |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|     X |
+|     O |
+|       |
+---------
+Making move level "easy"
+---------
+|   X X |
+|     O |
+|       |
+---------
+Making move level "easy"
+---------
+| O X X |
+|     O |
+|       |
+---------
+Making move level "easy"
+---------
+| O X X |
+|     O |
+|   X   |
+---------
+Making move level "easy"
+---------
+| O X X |
+|     O |
+|   X O |
+---------
+Making move level "easy"
+---------
+| O X X |
+| X   O |
+|   X O |
+---------
+Making move level "easy"
+---------
+| O X X |
+| X O O |
+|   X O |
+---------
+O wins
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+| X     |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+| X     |
+|       |
+| O     |
+---------
+Making move level "easy"
+---------
+| X     |
+|       |
+| O   X |
+---------
+Making move level "easy"
+---------
+| X     |
+|     O |
+| O   X |
+---------
+Making move level "easy"
+---------
+| X     |
+|   X O |
+| O   X |
+---------
 X wins
 !Input command: > start easy easy
 ---------
@@ -1548,47 +1829,156 @@
 ---------
 Making move level "easy"
 ---------
+| O     |
+|   X   |
+|       |
+---------
+Making move level "easy"
+---------
+| O   X |
+|   X   |
+|       |
+---------
+Making move level "easy"
+---------
+| O   X |
+|   X   |
+| O     |
+---------
+Making move level "easy"
+---------
+| O X X |
+|   X   |
+| O     |
+---------
+Making move level "easy"
+---------
+| O X X |
+|   X   |
+| O O   |
+---------
+Making move level "easy"
+---------
+| O X X |
+|   X X |
+| O O   |
+---------
+Making move level "easy"
+---------
+| O X X |
+|   X X |
+| O O O |
+---------
+O wins
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|       |
 |       |
 |   X   |
-| O     |
 ---------
 Making move level "easy"
 ---------
-| X     |
+|     O |
+|       |
 |   X   |
-| O     |
 ---------
 Making move level "easy"
 ---------
-| X     |
-|   X   |
-| O   O |
----------
-Making move level "easy"
----------
-| X     |
+|     O |
+|       |
 | X X   |
-| O   O |
 ---------
 Making move level "easy"
 ---------
+|     O |
+| O     |
+| X X   |
+---------
+Making move level "easy"
+---------
+|     O |
+| O X   |
+| X X   |
+---------
+Making move level "easy"
+---------
+| O   O |
+| O X   |
+| X X   |
+---------
+Making move level "easy"
+---------
+| O   O |
+| O X   |
+| X X X |
+---------
+X wins
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|       |
+|       |
+|   X   |
+---------
+Making move level "easy"
+---------
+|       |
+|       |
+| O X   |
+---------
+Making move level "easy"
+---------
+|       |
+| X     |
+| O X   |
+---------
+Making move level "easy"
+---------
+|   O   |
+| X     |
+| O X   |
+---------
+Making move level "easy"
+---------
+|   O X |
+| X     |
+| O X   |
+---------
+Making move level "easy"
+---------
+|   O X |
 | X O   |
-| X X   |
-| O   O |
+| O X   |
+---------
+Making move level "easy"
+---------
+|   O X |
+| X O   |
+| O X X |
+---------
+Making move level "easy"
+---------
+|   O X |
+| X O O |
+| O X X |
 ---------
 Making move level "easy"
 ---------
 | X O X |
-| X X   |
-| O   O |
+| X O O |
+| O X X |
 ---------
-Making move level "easy"
----------
-| X O X |
-| X X O |
-| O   O |
----------
-Making move level "easy"
 Draw
 !Input command: > start easy easy
 ---------
@@ -1604,47 +1994,40 @@
 ---------
 Making move level "easy"
 ---------
-| X     |
-|     O |
+| X O   |
+|       |
 |       |
 ---------
 Making move level "easy"
 ---------
+| X O   |
 | X     |
-|     O |
+|       |
+---------
+Making move level "easy"
+---------
+| X O   |
+| X   O |
+|       |
+---------
+Making move level "easy"
+---------
+| X O   |
+| X   O |
 |     X |
 ---------
 Making move level "easy"
 ---------
-| X     |
-|   O O |
-|     X |
----------
-Making move level "easy"
----------
-| X X   |
-|   O O |
-|     X |
----------
-Making move level "easy"
----------
-| X X   |
-|   O O |
-|   O X |
----------
-Making move level "easy"
----------
-| X X   |
+| X O   |
 | X O O |
-|   O X |
+|     X |
 ---------
 Making move level "easy"
 ---------
-| X X   |
+| X O   |
 | X O O |
-| O O X |
+| X   X |
 ---------
-Making move level "easy"
 X wins
 !Input command: > start easy easy
 ---------
@@ -1654,35 +2037,52 @@
 ---------
 Making move level "easy"
 ---------
-| X     |
 |       |
+| X     |
 |       |
 ---------
 Making move level "easy"
 ---------
-| X     |
 | O     |
+| X     |
 |       |
 ---------
 Making move level "easy"
 ---------
+| O X   |
 | X     |
-| O     |
-|     X |
+|       |
 ---------
 Making move level "easy"
 ---------
+| O X   |
 | X     |
-| O O   |
-|     X |
+|     O |
 ---------
 Making move level "easy"
 ---------
-| X   X |
-| O O   |
-|     X |
+| O X   |
+| X     |
+| X   O |
 ---------
 Making move level "easy"
+---------
+| O X   |
+| X   O |
+| X   O |
+---------
+Making move level "easy"
+---------
+| O X   |
+| X   O |
+| X X O |
+---------
+Making move level "easy"
+---------
+| O X   |
+| X O O |
+| X X O |
+---------
 O wins
 !Input command: > start easy easy
 ---------
@@ -1693,40 +2093,88 @@
 Making move level "easy"
 ---------
 |       |
+|       |
+| X     |
+---------
+Making move level "easy"
+---------
+|       |
+|   O   |
+| X     |
+---------
+Making move level "easy"
+---------
+|       |
+|   O   |
+| X X   |
+---------
+Making move level "easy"
+---------
+|       |
+|   O   |
+| X X O |
+---------
+Making move level "easy"
+---------
+|       |
+|   O X |
+| X X O |
+---------
+Making move level "easy"
+---------
+|       |
+| O O X |
+| X X O |
+---------
+Making move level "easy"
+---------
+|     X |
+| O O X |
+| X X O |
+---------
+Making move level "easy"
+---------
+| O   X |
+| O O X |
+| X X O |
+---------
+O wins
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
 |     X |
 |       |
+|       |
 ---------
 Making move level "easy"
 ---------
-|       |
 |     X |
-|   O   |
----------
-Making move level "easy"
----------
 |       |
-| X   X |
 |   O   |
 ---------
 Making move level "easy"
 ---------
-|   O   |
-| X   X |
-|   O   |
----------
-Making move level "easy"
----------
-|   O   |
-| X   X |
+|     X |
+|       |
 | X O   |
 ---------
 Making move level "easy"
 ---------
-|   O O |
-| X   X |
+|     X |
+|     O |
 | X O   |
 ---------
 Making move level "easy"
+---------
+|     X |
+|   X O |
+| X O   |
+---------
 X wins
 !Input command: > start easy easy
 ---------
@@ -1742,203 +2190,113 @@
 ---------
 Making move level "easy"
 ---------
-|       |
-|       |
-| X O   |
----------
-Making move level "easy"
----------
-|     X |
-|       |
-| X O   |
----------
-Making move level "easy"
----------
-|     X |
-| O     |
-| X O   |
----------
-Making move level "easy"
----------
-|   X X |
-| O     |
-| X O   |
----------
-Making move level "easy"
----------
-| O X X |
-| O     |
-| X O   |
----------
-Making move level "easy"
----------
-| O X X |
-| O   X |
-| X O   |
----------
-Making move level "easy"
----------
-| O X X |
-| O   X |
-| X O O |
----------
-Making move level "easy"
-X wins
-!Input command: > start easy easy
----------
-|       |
-|       |
-|       |
----------
-Making move level "easy"
----------
-|       |
-|       |
-|     X |
----------
-Making move level "easy"
----------
-|       |
-|       |
-|   O X |
----------
-Making move level "easy"
----------
-|     X |
-|       |
-|   O X |
----------
-Making move level "easy"
----------
-|     X |
 |     O |
-|   O X |
----------
-Making move level "easy"
----------
-|     X |
-|   X O |
-|   O X |
----------
-Making move level "easy"
----------
-| O   X |
-|   X O |
-|   O X |
----------
-Making move level "easy"
-X wins
-!Input command: > start easy easy
----------
 |       |
-|       |
-|       |
----------
-Making move level "easy"
----------
-|       |
-|       |
-|   X   |
+| X     |
 ---------
 Making move level "easy"
 ---------
 |     O |
-|       |
-|   X   |
----------
-Making move level "easy"
----------
-| X   O |
-|       |
-|   X   |
----------
-Making move level "easy"
----------
-| X O O |
-|       |
-|   X   |
----------
-Making move level "easy"
----------
-| X O O |
-|     X |
-|   X   |
----------
-Making move level "easy"
----------
-| X O O |
-| O   X |
-|   X   |
----------
-Making move level "easy"
----------
-| X O O |
-| O   X |
-|   X X |
----------
-Making move level "easy"
----------
-| X O O |
-| O   X |
-| O X X |
----------
-Making move level "easy"
-X wins
-!Input command: > start easy easy
----------
-|       |
-|       |
-|       |
----------
-Making move level "easy"
----------
-|   X   |
-|       |
-|       |
----------
-Making move level "easy"
----------
-|   X   |
-|       |
-|   O   |
----------
-Making move level "easy"
----------
 |   X   |
 | X     |
-|   O   |
 ---------
 Making move level "easy"
 ---------
-|   X   |
-| X O   |
-|   O   |
----------
-Making move level "easy"
----------
-|   X   |
-| X O   |
-|   O X |
----------
-Making move level "easy"
----------
+|     O |
 | O X   |
-| X O   |
-|   O X |
+| X     |
 ---------
 Making move level "easy"
 ---------
+|   X O |
 | O X   |
-| X O   |
-| X O X |
+| X     |
 ---------
 Making move level "easy"
 ---------
 | O X O |
-| X O   |
+| O X   |
+| X     |
+---------
+Making move level "easy"
+---------
+| O X O |
+| O X X |
+| X     |
+---------
+Making move level "easy"
+---------
+| O X O |
+| O X X |
+| X   O |
+---------
+Making move level "easy"
+---------
+| O X O |
+| O X X |
+| X X O |
+---------
+X wins
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|       |
+|     X |
+|       |
+---------
+Making move level "easy"
+---------
+|       |
+|   O X |
+|       |
+---------
+Making move level "easy"
+---------
+|       |
+|   O X |
+|     X |
+---------
+Making move level "easy"
+---------
+|     O |
+|   O X |
+|     X |
+---------
+Making move level "easy"
+---------
+| X   O |
+|   O X |
+|     X |
+---------
+Making move level "easy"
+---------
+| X   O |
+|   O X |
+|   O X |
+---------
+Making move level "easy"
+---------
+| X   O |
+|   O X |
 | X O X |
 ---------
 Making move level "easy"
+---------
+| X   O |
+| O O X |
+| X O X |
+---------
+Making move level "easy"
+---------
+| X X O |
+| O O X |
+| X O X |
+---------
 Draw
 !Input command: > start easy easy
 ---------
@@ -1949,184 +2307,143 @@
 Making move level "easy"
 ---------
 |       |
+|       |
 |   X   |
+---------
+Making move level "easy"
+---------
+|       |
+| O     |
+|   X   |
+---------
+Making move level "easy"
+---------
+|       |
+| O     |
+|   X X |
+---------
+Making move level "easy"
+---------
+|       |
+| O     |
+| O X X |
+---------
+Making move level "easy"
+---------
+| X     |
+| O     |
+| O X X |
+---------
+Making move level "easy"
+---------
+| X     |
+| O   O |
+| O X X |
+---------
+Making move level "easy"
+---------
+| X     |
+| O X O |
+| O X X |
+---------
+X wins
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|   X   |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|   X   |
+|       |
+|     O |
+---------
+Making move level "easy"
+---------
+|   X   |
+| X     |
+|     O |
+---------
+Making move level "easy"
+---------
+|   X O |
+| X     |
+|     O |
+---------
+Making move level "easy"
+---------
+|   X O |
+| X     |
+|   X O |
+---------
+Making move level "easy"
+---------
+|   X O |
+| X   O |
+|   X O |
+---------
+O wins
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|       |
+| X     |
 |       |
 ---------
 Making move level "easy"
 ---------
 |     O |
-|   X   |
+| X     |
 |       |
 ---------
 Making move level "easy"
 ---------
-|   X O |
-|   X   |
+|     O |
+| X   X |
 |       |
 ---------
 Making move level "easy"
 ---------
-|   X O |
-|   X   |
-|   O   |
+|     O |
+| X   X |
+|     O |
 ---------
 Making move level "easy"
 ---------
 |   X O |
-|   X   |
-| X O   |
----------
-Making move level "easy"
----------
-|   X O |
-|   X   |
-| X O O |
----------
-Making move level "easy"
----------
-|   X O |
-| X X   |
-| X O O |
+| X   X |
+|     O |
 ---------
 Making move level "easy"
 ---------
 | O X O |
-| X X   |
-| X O O |
----------
-Making move level "easy"
-X wins
-!Input command: > start easy easy
----------
-|       |
-|       |
-|       |
----------
-Making move level "easy"
----------
-|       |
-|   X   |
-|       |
----------
-Making move level "easy"
----------
-|       |
-|   X O |
-|       |
----------
-Making move level "easy"
----------
-|       |
-| X X O |
-|       |
----------
-Making move level "easy"
----------
-|       |
-| X X O |
-|   O   |
----------
-Making move level "easy"
----------
-| X     |
-| X X O |
-|   O   |
----------
-Making move level "easy"
----------
-| X   O |
-| X X O |
-|   O   |
----------
-Making move level "easy"
-X wins
-!Input command: > start easy easy
----------
-|       |
-|       |
-|       |
----------
-Making move level "easy"
----------
-|   X   |
-|       |
-|       |
----------
-Making move level "easy"
----------
-| O X   |
-|       |
-|       |
----------
-Making move level "easy"
----------
-| O X   |
-|     X |
-|       |
----------
-Making move level "easy"
----------
-| O X   |
-|     X |
-| O     |
----------
-Making move level "easy"
----------
-| O X   |
-|     X |
-| O X   |
----------
-Making move level "easy"
-O wins
-!Input command: > start easy easy
----------
-|       |
-|       |
-|       |
----------
-Making move level "easy"
----------
-|     X |
-|       |
-|       |
----------
-Making move level "easy"
----------
-| O   X |
-|       |
-|       |
----------
-Making move level "easy"
----------
-| O   X |
-|       |
-|   X   |
----------
-Making move level "easy"
----------
-| O   X |
+| X   X |
 |     O |
-|   X   |
 ---------
 Making move level "easy"
 ---------
-| O   X |
-|   X O |
-|   X   |
+| O X O |
+| X   X |
+| X   O |
 ---------
 Making move level "easy"
 ---------
-| O   X |
-|   X O |
-| O X   |
+| O X O |
+| X O X |
+| X   O |
 ---------
-Making move level "easy"
----------
-| O   X |
-|   X O |
-| O X X |
----------
-Making move level "easy"
 O wins
 !Input command: > start easy easy
 ---------
@@ -2142,235 +2459,89 @@
 ---------
 Making move level "easy"
 ---------
-|       |
-| O   X |
-|       |
----------
-Making move level "easy"
----------
+| O     |
 |     X |
-| O   X |
 |       |
 ---------
 Making move level "easy"
 ---------
+| O     |
 |     X |
-| O   X |
-|   O   |
+| X     |
 ---------
 Making move level "easy"
 ---------
+| O O   |
 |     X |
-| O X X |
-|   O   |
----------
-Making move level "easy"
----------
-| O   X |
-| O X X |
-|   O   |
----------
-Making move level "easy"
----------
-| O X X |
-| O X X |
-|   O   |
----------
-Making move level "easy"
-O wins
-!Input command: > start easy easy
----------
-|       |
-|       |
-|       |
----------
-Making move level "easy"
----------
 | X     |
-|       |
-|       |
 ---------
 Making move level "easy"
 ---------
-| X     |
-|       |
-|   O   |
+| O O   |
+|     X |
+| X   X |
 ---------
 Making move level "easy"
 ---------
-| X     |
-|       |
+| O O   |
 |   O X |
----------
-Making move level "easy"
----------
-| X     |
-|       |
-| O O X |
----------
-Making move level "easy"
----------
-| X     |
-| X     |
-| O O X |
----------
-Making move level "easy"
----------
-| X     |
-| X   O |
-| O O X |
----------
-Making move level "easy"
----------
-| X X   |
-| X   O |
-| O O X |
----------
-Making move level "easy"
----------
-| X X   |
-| X O O |
-| O O X |
----------
-Making move level "easy"
-X wins
-!Input command: > start easy easy
----------
-|       |
-|       |
-|       |
----------
-Making move level "easy"
----------
-|       |
-|       |
-| X     |
----------
-Making move level "easy"
----------
-|       |
-|   O   |
-| X     |
----------
-Making move level "easy"
----------
-| X     |
-|   O   |
-| X     |
----------
-Making move level "easy"
----------
-| X     |
-| O O   |
-| X     |
----------
-Making move level "easy"
----------
-| X     |
-| O O X |
-| X     |
----------
-Making move level "easy"
----------
-| X     |
-| O O X |
-| X   O |
----------
-Making move level "easy"
----------
 | X   X |
+---------
+Making move level "easy"
+---------
 | O O X |
-| X   O |
----------
-Making move level "easy"
----------
-| X   X |
-| O O X |
-| X O O |
----------
-Making move level "easy"
-X wins
-!Input command: > start easy easy
----------
-|       |
-|       |
-|       |
----------
-Making move level "easy"
----------
-| X     |
-|       |
-|       |
----------
-Making move level "easy"
----------
-| X     |
-| O     |
-|       |
----------
-Making move level "easy"
----------
-| X     |
-| O     |
-|     X |
----------
-Making move level "easy"
----------
-| X     |
-| O O   |
-|     X |
----------
-Making move level "easy"
----------
-| X   X |
-| O O   |
-|     X |
----------
-Making move level "easy"
-O wins
-!Input command: > start easy easy
----------
-|       |
-|       |
-|       |
----------
-Making move level "easy"
----------
-|       |
-| X     |
-|       |
----------
-Making move level "easy"
----------
-|       |
-| X     |
-|     O |
----------
-Making move level "easy"
----------
-|       |
-| X X   |
-|     O |
----------
-Making move level "easy"
----------
-|       |
-| X X O |
-|     O |
----------
-Making move level "easy"
----------
-|     X |
-| X X O |
-|     O |
----------
-Making move level "easy"
----------
 |   O X |
-| X X O |
+| X   X |
+---------
+X wins
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|       |
+|       |
+|   X   |
+---------
+Making move level "easy"
+---------
+|       |
 |     O |
+|   X   |
 ---------
 Making move level "easy"
+---------
+|       |
+|     O |
+|   X X |
+---------
+Making move level "easy"
+---------
+|       |
+|     O |
+| O X X |
+---------
+Making move level "easy"
+---------
+|   X   |
+|     O |
+| O X X |
+---------
+Making move level "easy"
+---------
+| O X   |
+|     O |
+| O X X |
+---------
+Making move level "easy"
+---------
+| O X   |
+|   X O |
+| O X X |
+---------
 X wins
 !Input command: > start easy easy
 ---------
@@ -2386,23 +2557,52 @@
 ---------
 Making move level "easy"
 ---------
+|   O   |
+| X     |
 |       |
-| X     |
-|   O   |
 ---------
 Making move level "easy"
 ---------
-| X     |
-| X     |
 |   O   |
+| X     |
+|   X   |
 ---------
 Making move level "easy"
 ---------
-| X     |
+|   O   |
 | X   O |
-|   O   |
+|   X   |
 ---------
 Making move level "easy"
+---------
+|   O   |
+| X   O |
+|   X X |
+---------
+Making move level "easy"
+---------
+|   O   |
+| X   O |
+| O X X |
+---------
+Making move level "easy"
+---------
+|   O   |
+| X X O |
+| O X X |
+---------
+Making move level "easy"
+---------
+|   O O |
+| X X O |
+| O X X |
+---------
+Making move level "easy"
+---------
+| X O O |
+| X X O |
+| O X X |
+---------
 X wins
 !Input command: > start easy easy
 ---------
@@ -2412,53 +2612,58 @@
 ---------
 Making move level "easy"
 ---------
-|   X   |
+|     X |
 |       |
 |       |
 ---------
 Making move level "easy"
 ---------
-|   X   |
-| O     |
+|     X |
 |       |
+|   O   |
 ---------
 Making move level "easy"
 ---------
 |   X X |
-| O     |
 |       |
----------
-Making move level "easy"
----------
-| O X X |
-| O     |
-|       |
----------
-Making move level "easy"
----------
-| O X X |
-| O X   |
-|       |
----------
-Making move level "easy"
----------
-| O X X |
-| O X   |
 |   O   |
 ---------
 Making move level "easy"
 ---------
-| O X X |
-| O X   |
-|   O X |
+|   X X |
+|       |
+| O O   |
+---------
+Making move level "easy"
+---------
+|   X X |
+| X     |
+| O O   |
 ---------
 Making move level "easy"
 ---------
 | O X X |
-| O X O |
-|   O X |
+| X     |
+| O O   |
 ---------
 Making move level "easy"
+---------
+| O X X |
+| X   X |
+| O O   |
+---------
+Making move level "easy"
+---------
+| O X X |
+| X O X |
+| O O   |
+---------
+Making move level "easy"
+---------
+| O X X |
+| X O X |
+| O O X |
+---------
 X wins
 !Input command: > start easy easy
 ---------
@@ -2469,50 +2674,3969 @@
 Making move level "easy"
 ---------
 |       |
+|       |
+| X     |
+---------
+Making move level "easy"
+---------
+|       |
+|       |
+| X   O |
+---------
+Making move level "easy"
+---------
 | X     |
 |       |
+| X   O |
 ---------
 Making move level "easy"
 ---------
-|   O   |
 | X     |
-|       |
----------
-Making move level "easy"
----------
-|   O   |
-| X     |
-| X     |
----------
-Making move level "easy"
----------
 |   O   |
 | X   O |
+---------
+Making move level "easy"
+---------
 | X     |
----------
-Making move level "easy"
----------
 |   O   |
-| X   O |
-| X X   |
----------
-Making move level "easy"
----------
-|   O   |
-| X   O |
 | X X O |
 ---------
 Making move level "easy"
+---------
+| X   O |
+|   O   |
+| X X O |
+---------
+Making move level "easy"
+---------
+| X   O |
+|   O X |
+| X X O |
+---------
+Making move level "easy"
+---------
+| X O O |
+|   O X |
+| X X O |
+---------
+Making move level "easy"
+---------
+| X O O |
+| X O X |
+| X X O |
+---------
+X wins
+!Input command: > start easy easy
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "easy"
+---------
+|       |
+|     X |
+|       |
+---------
+Making move level "easy"
+---------
+|       |
+|     X |
+|     O |
+---------
+Making move level "easy"
+---------
+|       |
+|     X |
+|   X O |
+---------
+Making move level "easy"
+---------
+|       |
+| O   X |
+|   X O |
+---------
+Making move level "easy"
+---------
+|       |
+| O   X |
+| X X O |
+---------
+Making move level "easy"
+---------
+|     O |
+| O   X |
+| X X O |
+---------
+Making move level "easy"
+---------
+|     O |
+| O X X |
+| X X O |
+---------
+Making move level "easy"
+---------
+| O   O |
+| O X X |
+| X X O |
+---------
+Making move level "easy"
+---------
+| O X O |
+| O X X |
+| X X O |
+---------
+X wins
+[1;31m
+Start test 6[0m
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|       |
+|   X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|   O   |
+|   X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+| X O   |
+|   X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   O   |
+| X O   |
+|   X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X O   |
+| X O   |
+|   X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X O   |
+| X O   |
+| O X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X O X |
+| X O   |
+| O X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X O X |
+| X O O |
+| O X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X O X |
+| X O O |
+| O X X |
+---------
+Draw
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     X |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     X |
+|       |
+| O     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     X |
+|       |
+| O X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
 ---------
 |   O X |
+|       |
+| O X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   O X |
+| X     |
+| O X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   O X |
+| X     |
+| O X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X O X |
+| X     |
+| O X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X O X |
+| X O   |
+| O X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X O X |
+| X O X |
+| O X O |
+---------
+Draw
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   X   |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   X   |
+|     O |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   X   |
+|     O |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   X O |
+|     O |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   X O |
+|   X O |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O X O |
+|   X O |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+---------
+| O X O |
+|   X O |
+|   X X |
+---------
+X wins
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   X   |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   X   |
+|     O |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   X X |
+|     O |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O X X |
+|     O |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O X X |
+|   X O |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O X X |
+|   X O |
+| O     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+---------
+| O X X |
+|   X O |
+| O X   |
+---------
+X wins
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|   X   |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O     |
+|   X   |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O     |
+|   X   |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O   O |
+|   X   |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O X O |
+|   X   |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O X O |
+|   X   |
+|   O X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O X O |
+|   X X |
+|   O X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O X O |
+| O X X |
+|   O X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O X O |
+| O X X |
+| X O X |
+---------
+Draw
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X     |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
 | X   O |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X   O |
+|       |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X   O |
+|   O   |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X   O |
+|   O   |
+| X   X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X   O |
+| O O   |
+| X   X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+---------
+| X   O |
+| O O   |
+| X X X |
+---------
+X wins
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     X |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     X |
+|     O |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     X |
+|     O |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     X |
+|     O |
+| O   X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     X |
+|     O |
+| O X X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     X |
+|   O O |
+| O X X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|     X |
+| X O O |
+| O X X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O   X |
+| X O O |
+| O X X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O X X |
+| X O O |
+| O X X |
+---------
+Draw
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+| X     |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     O |
+| X     |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     O |
+| X     |
+|   X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     O |
+| X O   |
+|   X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|     O |
+| X O   |
+| X X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O   O |
+| X O   |
+| X X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+---------
+| O   O |
+| X O   |
+| X X X |
+---------
+X wins
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|       |
+|   X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     O |
+|       |
+|   X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X   O |
+|       |
+|   X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X   O |
+|       |
+|   X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X   O |
+|     X |
+|   X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X O O |
+|     X |
+|   X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X O O |
+|   X X |
+|   X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X O O |
+| O X X |
+|   X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X O O |
+| O X X |
 | X X O |
 ---------
-Making move level "easy"
+Draw
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|     X |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|     X |
+| O     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+| X   X |
+| O     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|       |
+| X O X |
+| O     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|     X |
+| X O X |
+| O     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|     X |
+| X O X |
+| O   O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X   X |
+| X O X |
+| O   O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+---------
+| X   X |
+| X O X |
+| O O O |
+---------
+O wins
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|       |
+| X     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     O |
+|       |
+| X     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X   O |
+|       |
+| X     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X   O |
+| O     |
+| X     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X   O |
+| O     |
+| X   X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X   O |
+| O O   |
+| X   X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+---------
+| X   O |
+| O O   |
+| X X X |
+---------
+X wins
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   X   |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   X   |
+| O     |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   X   |
+| O     |
+| X     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   X   |
+| O     |
+| X O   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   X   |
+| O X   |
+| X O   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|   X O |
+| O X   |
+| X O   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   X O |
+| O X X |
+| X O   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   X O |
+| O X X |
+| X O O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X X O |
+| O X X |
+| X O O |
+---------
+Draw
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X     |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X     |
+|       |
+|   O   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X     |
+|   X   |
+|   O   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X     |
+|   X   |
+|   O O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X     |
+|   X   |
+| X O O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X   O |
+|   X   |
+| X O O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+---------
+| X   O |
+| X X   |
+| X O O |
+---------
+X wins
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+| X     |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     O |
+| X     |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   X O |
+| X     |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   X O |
+| X O   |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|   X O |
+| X O   |
+| X     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O X O |
+| X O   |
+| X     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O X O |
+| X O   |
+| X   X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O X O |
+| X O   |
+| X O X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O X O |
+| X O X |
+| X O X |
+---------
+Draw
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|       |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O     |
+|       |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O     |
+|     X |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O   O |
+|     X |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O X O |
+|     X |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O X O |
+|   O X |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O X O |
+|   O X |
+| X   X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O X O |
+|   O X |
+| X O X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O X O |
+| X O X |
+| X O X |
+---------
+Draw
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|       |
+|   X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+| O     |
+|   X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X     |
+| O     |
+|   X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X     |
+| O     |
+| O X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X X   |
+| O     |
+| O X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X X O |
+| O     |
+| O X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+---------
+| X X O |
+| O X   |
+| O X   |
+---------
+X wins
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     X |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     X |
+|       |
+|     O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X   X |
+|       |
+|     O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X O X |
+|       |
+|     O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X O X |
+| X     |
+|     O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X O X |
+| X     |
+| O   O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X O X |
+| X     |
+| O X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X O X |
+| X O   |
+| O X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X O X |
+| X O X |
+| O X O |
+---------
+Draw
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X     |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X     |
+|       |
+|   O   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X   X |
+|       |
+|   O   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X O X |
+|       |
+|   O   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X O X |
+|   X   |
+|   O   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X O X |
+|   X   |
+| O O   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+---------
+| X O X |
+|   X   |
+| O O X |
+---------
+X wins
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X     |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X     |
+|   O   |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X     |
+| X O   |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X     |
+| X O   |
+| O     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X   X |
+| X O   |
+| O     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X O X |
+| X O   |
+| O     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X O X |
+| X O   |
+| O X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X O X |
+| X O   |
+| O X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X O X |
+| X O X |
+| O X O |
+---------
+Draw
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     X |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O   X |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O   X |
+|     X |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O   X |
+|     X |
+|     O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O   X |
+|   X X |
+|     O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O   X |
+| O X X |
+|     O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+---------
+| O   X |
+| O X X |
+| X   O |
+---------
+X wins
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|       |
+|   X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|   O   |
+|   X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|   O   |
+|   X X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|       |
+|   O   |
+| O X X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|     X |
+|   O   |
+| O X X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|     X |
+|   O O |
+| O X X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|     X |
+| X O O |
+| O X X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   O X |
+| X O O |
+| O X X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X O X |
+| X O O |
+| O X X |
+---------
+Draw
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+| X     |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     O |
+| X     |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X   O |
+| X     |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X   O |
+| X     |
+| O     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X   O |
+| X X   |
+| O     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X   O |
+| X X O |
+| O     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+---------
+| X   O |
+| X X O |
+| O   X |
+---------
+X wins
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|   X   |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|   X   |
+|     O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|   X X |
+|     O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|       |
+| O X X |
+|     O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+| O X X |
+|   X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|   O   |
+| O X X |
+|   X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   O   |
+| O X X |
+| X X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|   O O |
+| O X X |
+| X X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X O O |
+| O X X |
+| X X O |
+---------
+Draw
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|       |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|   O   |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|   O   |
+| X   X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|       |
+|   O   |
+| X O X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|   X   |
+|   O   |
+| X O X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   X O |
+|   O   |
+| X O X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   X O |
+| X O   |
+| X O X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O X O |
+| X O   |
+| X O X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O X O |
+| X O X |
+| X O X |
+---------
+Draw
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+| X     |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     O |
+| X     |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     O |
+| X   X |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|     O |
+| X O X |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|     O |
+| X O X |
+| X     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O   O |
+| X O X |
+| X     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O X O |
+| X O X |
+| X     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+---------
+| O X O |
+| X O X |
+| X   O |
+---------
+O wins
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   X   |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   X   |
+|     O |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   X   |
+|   X O |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|   X   |
+|   X O |
+|   O   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   X   |
+|   X O |
+| X O   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|   X O |
+|   X O |
+| X O   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|   X O |
+|   X O |
+| X O X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O X O |
+|   X O |
+| X O X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O X O |
+| X X O |
+| X O X |
+---------
+Draw
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+| X     |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+| X   O |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     X |
+| X   O |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     X |
+| X O O |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     X |
+| X O O |
+|   X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     X |
+| X O O |
+|   X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X   X |
+| X O O |
+|   X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X O X |
+| X O O |
+|   X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+---------
+| X O X |
+| X O O |
+| X X O |
+---------
+X wins
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|   X   |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|   X   |
+|     O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     X |
+|   X   |
+|     O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|     X |
+|   X   |
+| O   O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|     X |
+|   X   |
+| O X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|   O X |
+|   X   |
+| O X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   O X |
+|   X X |
+| O X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|   O X |
+| O X X |
+| O X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X O X |
+| O X X |
+| O X O |
+---------
+Draw
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+| X     |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+| X O   |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     X |
+| X O   |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     X |
+| X O   |
+| O     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X   X |
+| X O   |
+| O     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X O X |
+| X O   |
+| O     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X O X |
+| X O   |
+| O X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X O X |
+| X O   |
+| O X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X O X |
+| X O X |
+| O X O |
+---------
+Draw
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|       |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+| O     |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     X |
+| O     |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|     X |
+| O   O |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|     X |
+| O X O |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O   X |
+| O X O |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+---------
+| O   X |
+| O X O |
+| X   X |
+---------
+X wins
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|       |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O     |
+|       |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O     |
+|   X   |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O     |
+|   X O |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O     |
+|   X O |
+|   X X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O O   |
+|   X O |
+|   X X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+---------
+| O O   |
+|   X O |
+| X X X |
+---------
+X wins
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|   X   |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|   X   |
+| O     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|   X   |
+| O   X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O     |
+|   X   |
+| O   X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O     |
+| X X   |
+| O   X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O     |
+| X X O |
+| O   X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O     |
+| X X O |
+| O X X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O O   |
+| X X O |
+| O X X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
 ---------
 | O O X |
+| X X O |
+| O X X |
+---------
+Draw
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|   X   |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|   X   |
+|     O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|   X   |
+|   X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|   O   |
+|   X   |
+|   X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   O   |
+| X X   |
+|   X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|   O   |
+| X X O |
+|   X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|   O X |
+| X X O |
+|   X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|   O X |
+| X X O |
+| O X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X O X |
+| X X O |
+| O X O |
+---------
+Draw
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|       |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   O   |
+|       |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X O   |
+|       |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X O   |
+|   O   |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X O   |
+|   O   |
+|   X X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X O   |
+|   O   |
+| O X X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X O X |
+|   O   |
+| O X X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X O X |
+|   O O |
+| O X X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X O X |
+| X O O |
+| O X X |
+---------
+Draw
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|       |
+| X     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     O |
+|       |
+| X     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
 | X   O |
+|       |
+| X     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X   O |
+| O     |
+| X     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X   O |
+| O   X |
+| X     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X O O |
+| O   X |
+| X     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X O O |
+| O   X |
+| X X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X O O |
+| O   X |
 | X X O |
 ---------
-Making move level "easy"
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X O O |
+| O X X |
+| X X O |
+---------
+Draw
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|   X   |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+| O X   |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     X |
+| O X   |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|     X |
+| O X   |
+| O     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X   X |
+| O X   |
+| O     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X O X |
+| O X   |
+| O     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+---------
+| X O X |
+| O X   |
+| O   X |
+---------
 X wins
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|       |
+|   X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+| O     |
+|   X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X     |
+| O     |
+|   X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X     |
+| O O   |
+|   X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X     |
+| O O X |
+|   X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X     |
+| O O X |
+|   X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X   X |
+| O O X |
+|   X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X O X |
+| O O X |
+|   X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X O X |
+| O O X |
+| X X O |
+---------
+Draw
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|       |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     O |
+|       |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X   O |
+|       |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X   O |
+|   O   |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X   O |
+|   O   |
+| X   X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X   O |
+| O O   |
+| X   X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+---------
+| X   O |
+| O O   |
+| X X X |
+---------
+X wins
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|     X |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+| O   X |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+| O   X |
+|   X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+| O   X |
+| O X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X     |
+| O   X |
+| O X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X     |
+| O O X |
+| O X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X   X |
+| O O X |
+| O X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X O X |
+| O O X |
+| O X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+---------
+| X O X |
+| O O X |
+| O X X |
+---------
+X wins
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X     |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X     |
+|     O |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X   X |
+|     O |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X O X |
+|     O |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X O X |
+|   X O |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X O X |
+|   X O |
+| O     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+---------
+| X O X |
+|   X O |
+| O   X |
+---------
+X wins
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|       |
+| X     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     O |
+|       |
+| X     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     O |
+| X     |
+| X     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O   O |
+| X     |
+| X     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O X O |
+| X     |
+| X     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O X O |
+| X     |
+| X   O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O X O |
+| X X   |
+| X   O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+---------
+| O X O |
+| X X O |
+| X   O |
+---------
+O wins
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X     |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X     |
+|       |
+| O     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X     |
+|   X   |
+| O     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X     |
+|   X   |
+| O   O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X     |
+|   X   |
+| O X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X O   |
+|   X   |
+| O X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X O X |
+|   X   |
+| O X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X O X |
+|   X O |
+| O X O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X O X |
+| X X O |
+| O X O |
+---------
+Draw
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|       |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|       |
+|   O X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|   X   |
+|   O X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O     |
+|   X   |
+|   O X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O     |
+|   X X |
+|   O X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O   O |
+|   X X |
+|   O X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+---------
+| O   O |
+| X X X |
+|   O X |
+---------
+X wins
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|       |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|   O   |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+| X O   |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     O |
+| X O   |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|     O |
+| X O   |
+| X   X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O   O |
+| X O   |
+| X   X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+---------
+| O   O |
+| X O   |
+| X X X |
+---------
+X wins
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   X   |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O X   |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O X   |
+|       |
+|     X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O X   |
+|       |
+| O   X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O X   |
+| X     |
+| O   X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O X   |
+| X     |
+| O O X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O X   |
+| X   X |
+| O O X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O X O |
+| X   X |
+| O O X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+---------
+| O X O |
+| X X X |
+| O O X |
+---------
+X wins
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|       |
+|   X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|       |
+| O X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|     X |
+| O X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     O |
+|     X |
+| O X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|     O |
+|   X X |
+| O X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|   O O |
+|   X X |
+| O X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+---------
+|   O O |
+| X X X |
+| O X   |
+---------
+X wins
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|       |
+|   X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|   O   |
+|   X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     X |
+|   O   |
+|   X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     X |
+|   O O |
+|   X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|     X |
+| X O O |
+|   X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   O X |
+| X O O |
+|   X   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   O X |
+| X O O |
+|   X X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+|   O X |
+| X O O |
+| O X X |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X O X |
+| X O O |
+| O X X |
+---------
+Draw
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+|       |
+| X     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+| O     |
+| X     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+| O   X |
+| X     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|       |
+| O O X |
+| X     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   X   |
+| O O X |
+| X     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   X   |
+| O O X |
+| X   O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X X   |
+| O O X |
+| X   O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| X X O |
+| O O X |
+| X   O |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| X X O |
+| O O X |
+| X X O |
+---------
+Draw
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|     X |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O   X |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O X X |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O X X |
+| O     |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O X X |
+| O     |
+| X     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O X X |
+| O O   |
+| X     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O X X |
+| O O X |
+| X     |
+---------
+Making move level "medium"
+&Move made based on other placements!
+---------
+| O X X |
+| O O X |
+| X   O |
+---------
+O wins
+%Input command: > start medium medium
+---------
+|       |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+|   X   |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O X   |
+|       |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O X   |
+|   X   |
+|       |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O X   |
+|   X   |
+|   O   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O X   |
+| X X   |
+|   O   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O X   |
+| X X O |
+|   O   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+Random move!
+---------
+| O X   |
+| X X O |
+| X O   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O X O |
+| X X O |
+| X O   |
+---------
+Making move level "medium"
+&Move made based on other placements!
+&Move made based on other placements!
+---------
+| O X O |
+| X X O |
+| X O X |
+---------
+Draw

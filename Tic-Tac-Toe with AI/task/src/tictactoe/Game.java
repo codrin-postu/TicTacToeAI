@@ -22,8 +22,14 @@ public class Game {
 
         for (int i = 0; i < 2; i++) {
             switch (players[i]) {
-                case COMPUTER:
-                    this.players.add(new Computer(board, Difficulty.EASY));
+                case COMPUTER_EASY:
+                    this.players.add(new EasyComputer(board));
+                    break;
+                case COMPUTER_MEDIUM:
+                    this.players.add(new MediumComputer(board));
+                    break;
+                case COMPUTER_HARD:
+                    this.players.add(new HardComputer(board));
                     break;
                 case USER:
                     this.players.add(new User(board));

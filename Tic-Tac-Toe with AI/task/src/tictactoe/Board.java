@@ -16,6 +16,10 @@ public class Board {
         }
     }
 
+    public char getCell(int coordX, int coordY) {
+        return  boardArray[coordX][coordY];
+    }
+
     //Returns true - cell is available; false - cell is occupied;
     public boolean checkCell(int coordX, int coordY) {
         if (boardArray[coordX][coordY] == ' ') {
@@ -35,6 +39,14 @@ public class Board {
             }
         }
         return count;
+    }
+
+    public char nextCell() {
+        if (getCellCount('X') > getCellCount('O')) {
+            return 'O';
+        } else {
+            return 'X';
+        }
     }
 
     public void addCell(int coordX, int coordY) {
@@ -63,6 +75,7 @@ public class Board {
                     && boardArray[i][1] == boardArray[i][2]
                     && boardArray[i][0] != ' '
             ) {
+                outputBoard();
                 System.out.println(boardArray[i][0] + " wins");
                 return true;
             }
@@ -70,6 +83,7 @@ public class Board {
                     && boardArray[1][i] == boardArray[2][i]
                     && boardArray[0][i] != ' '
             ) {
+                outputBoard();
                 System.out.println(boardArray[0][i] + " wins");
                 return true;
             }
@@ -79,6 +93,7 @@ public class Board {
                 && boardArray[1][1] == boardArray[2][2]
                 && boardArray[0][0] != ' '
         ) {
+            outputBoard();
             System.out.println(boardArray[0][0] + " wins");
             return true;
         }
@@ -87,11 +102,13 @@ public class Board {
                 && boardArray[1][1] == boardArray[2][0]
                 && boardArray[0][2] != ' '
         ) {
+            outputBoard();
             System.out.println(boardArray[0][2] + " wins");
             return true;
         }
 
         if (getCellCount('X') + getCellCount('O') == 9) {
+            outputBoard();
             System.out.println("Draw");
             return true;
         }
