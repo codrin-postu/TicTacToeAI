@@ -8,7 +8,7 @@ public class Game {
     ArrayList<Player> players;
     Board board;
 
-    public Game(PlayerType[] players) {
+    public Game(ArrayList<PlayerType> players) {
 
         char[] cells = new char[9];
 
@@ -21,7 +21,7 @@ public class Game {
         this.players = new ArrayList<>();
 
         for (int i = 0; i < 2; i++) {
-            switch (players[i]) {
+            switch (players.get(i)) {
                 case COMPUTER_EASY:
                     this.players.add(new EasyComputer(board));
                     break;

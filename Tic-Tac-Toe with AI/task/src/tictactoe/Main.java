@@ -31,27 +31,10 @@ public class Main {
                     MainMenu();
                 }
 
-                PlayerType[] players = new PlayerType[2];
+                ArrayList<PlayerType> players = new ArrayList<>();
 
-                for (int i = 1; i < 3; i++) {
-                    switch (input.get(i)) {
-                        case "user":
-                            players[i - 1] = PlayerType.USER;
-                            break;
-                        case "easy":
-                            players[i - 1] = PlayerType.COMPUTER_EASY;
-                            break;
-                        case "medium":
-                            players[i - 1] = PlayerType.COMPUTER_MEDIUM;
-                            break;
-                        case "hard":
-                            players[i - 1] = PlayerType.COMPUTER_HARD;
-                            break;
-                        default:
-                            System.out.println("Bad parameters!");
-                            MainMenu();
-                    }
-                }
+                players.addAll(getPlayerType(input));
+
                 Game game = new Game(players);
                 game.nextRound();
                 MainMenu();
@@ -64,4 +47,30 @@ public class Main {
 
 
     }
+
+    private static ArrayList<PlayerType> getPlayerType(ArrayList<String> input) {
+        ArrayList<PlayerType> players = new ArrayList<>();
+
+        for (int i = 1; i < 3; i++) {
+            switch (input.get(i)) {
+                case "user":
+                    players.add(PlayerType.USER);
+                    break;
+                case "easy":
+                    players.add(PlayerType.COMPUTER_EASY);
+                    break;
+                case "medium":
+                    players.add(PlayerType.COMPUTER_MEDIUM);
+                    break;
+                case "hard":
+                    players.add(PlayerType.COMPUTER_HARD);
+                    break;
+                default:
+                    System.out.println("Bad parameters!");
+                    MainMenu();
+            }
+        }
+        return players;
+    }
+
 }

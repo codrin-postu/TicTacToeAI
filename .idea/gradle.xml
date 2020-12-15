@@ -10,6 +10,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Problems/Alternating Fibonacci numbers" />
+            <option value="$PROJECT_DIR$/Problems/N-th power" />
+            <option value="$PROJECT_DIR$/Problems/Number of decompositions" />
             <option value="$PROJECT_DIR$/Tic-Tac-Toe with AI/task" />
             <option value="$PROJECT_DIR$/util" />
           </set>

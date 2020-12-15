@@ -10,24 +10,15 @@ public class MediumComputer extends Computer {
     @Override
     public void nextMove() {
         System.out.println("Making move level \"medium\"");
-
         char userCellType = board.nextCell();
         char opponentCellType = userCellType == 'X' ? 'O' : 'X';
 
-        if (verifyMove(userCellType)) {
-            return;
-        }
-
-        if (verifyMove(opponentCellType)) {
-            return;
-        }
-
+        if (verifyMove(userCellType)) return;
+        if (verifyMove(opponentCellType)) return;
         randomMove();
-
     }
 
     private void randomMove() {
-        System.out.println("Random move!");
         int xPos, yPos;
 
         do {
@@ -42,7 +33,6 @@ public class MediumComputer extends Computer {
     //Checks if it has moves where it can win. If it does, it will add the cell and return true.
     //TODO: Change all the if's to something more readable
     private boolean verifyMove(char cellType) {
-        System.out.println("Move made based on other placements!");
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 if (board.getCell(i, j) == ' ') {
@@ -50,28 +40,22 @@ public class MediumComputer extends Computer {
                         board.addCell(i, j);
                         return true;
                     }
-                    if (Math.abs(i - j) == 0 && i + j == 2) {
-                        if (checkPrimaryDiagonal(i, cellType) || checkSecondaryDiagonal(i, cellType)) {
-                            board.addCell(i, j);
-                            return true;
-                        }
-                    } else if (Math.abs(i - j) == 0) {
-                        if (checkPrimaryDiagonal(i, cellType)) {
-                            board.addCell(i, j);
-                            return true;
-                        }
-                    } else if (i + j == 2) {
-                        if (checkSecondaryDiagonal(i, cellType)) {
-                            board.addCell(i, j);
-                            return true;
-                        }
+                    if (Math.abs(i - j) == 0 && i + j == 2 && (checkPrimaryDiagonal(i, cellType) || checkSecondaryDiagonal(i, cellType))) {
+                        board.addCell(i, j);
+                        return true;
+                    } else if (Math.abs(i - j) == 0 && checkPrimaryDiagonal(i, cellType)) {
+                        board.addCell(i, j);
+                        return true;
+                    } else if (i + j == 2 && checkSecondaryDiagonal(i, cellType)) {
+                        board.addCell(i, j);
+                        return true;
                     }
                 }
             }
         }
         return false;
-
     }
+
 
     private boolean checkRow(int xCoord, int yCoord, char cellType) {
         var sameCellCount = 0;
