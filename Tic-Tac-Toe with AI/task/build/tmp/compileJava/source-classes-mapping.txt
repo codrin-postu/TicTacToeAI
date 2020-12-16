@@ -1,23 +1,23 @@
 tictactoe/Difficulty.java
  tictactoe.Difficulty
-tictactoe/HardComputer.java
- tictactoe.HardComputer
+tictactoe/PlayerType.java
+ tictactoe.PlayerType
+tictactoe/MediumComputer.java
+ tictactoe.MediumComputer
 tictactoe/Player.java
  tictactoe.Player
 tictactoe/Main.java
  tictactoe.Main
 tictactoe/User.java
  tictactoe.User
-tictactoe/MediumComputer.java
- tictactoe.MediumComputer
+tictactoe/Computer.java
+ tictactoe.Computer
 tictactoe/Board.java
  tictactoe.Board
 tictactoe/EasyComputer.java
  tictactoe.EasyComputer
-tictactoe/Computer.java
- tictactoe.Computer
+tictactoe/HardComputer.java
+ tictactoe.HardComputer
 tictactoe/Game.java
  tictactoe.Game
  tictactoe.Game$1
-tictactoe/PlayerType.java
- tictactoe.PlayerType

@@ -16,8 +16,19 @@ public class Board {
         }
     }
 
+    public char[] getBoard() {
+        char[] board = new char[9];
+        int boardPos = 0;
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                board[boardPos++] = boardArray[i][j];
+            }
+        }
+        return board;
+    }
+
     public char getCell(int coordX, int coordY) {
-        return  boardArray[coordX][coordY];
+        return boardArray[coordX][coordY];
     }
 
     //Returns true - cell is available; false - cell is occupied;
@@ -55,6 +66,11 @@ public class Board {
         } else {
             boardArray[coordX][coordY] = 'X';
         }
+    }
+
+    public void addCell(int coordX, int coordY, char cellType) {
+        boardArray[coordX][coordY] = cellType;
+
     }
 
     public void outputBoard() {

@@ -9,7 +9,7 @@ public class MediumComputer extends Computer {
 
     @Override
     public void nextMove() {
-        System.out.println("Making move level \"medium\"");
+        System.out.println("Making move level \"" + difficulty.getDifficulty() +"\"");
         char userCellType = board.nextCell();
         char opponentCellType = userCellType == 'X' ? 'O' : 'X';
 

@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
+//TODO: Change it so you can switch to 4x4 or 5x5 (aka dynamic)
+// Right now the size is hardcoded
+
 public class Main {
     public static void main(String[] args) {
         MainMenu();

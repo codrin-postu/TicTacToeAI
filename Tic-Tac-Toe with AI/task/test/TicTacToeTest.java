@@ -1,11 +1,8 @@
-import com.google.gson.internal.$Gson$Preconditions;
 import org.assertj.core.util.Lists;
 import org.hyperskill.hstest.dynamic.input.DynamicTestingMethod;
-import org.hyperskill.hstest.exception.outcomes.TestPassed;
 import org.hyperskill.hstest.exception.outcomes.WrongAnswer;
 import org.hyperskill.hstest.stage.StageTest;
 import org.hyperskill.hstest.testcase.CheckResult;
-import org.hyperskill.hstest.testcase.TestCase;
 import org.hyperskill.hstest.testing.TestedProgram;
 import tictactoe.Main;
 
@@ -19,12 +16,15 @@ enum FieldState {
 
     static FieldState get(char symbol) {
         switch (symbol) {
-            case 'X': return X;
-            case 'O': return O;
+            case 'X':
+                return X;
+            case 'O':
+                return O;
             case ' ':
             case '_':
                 return FREE;
-            default: return null;
+            default:
+                return null;
         }
     }
 }
@@ -34,7 +34,23 @@ class TicTacToeField {
     final FieldState[][] field;
 
     TicTacToeField(FieldState[][] field) {
-        this.field = field;
+        this.field = new FieldState[3][3];
+        for (int row = 0; row < 3; row++) {
+            for (int col = 0; col < 3; col++) {
+                this.field[row][col] = field[row][col];
+            }
+        }
+    }
+
+    TicTacToeField(String str) {
+        field = new FieldState[3][3];
+
+        for (int row = 0; row < 3; row++) {
+            for (int col = 0; col < 3; col++) {
+                field[row][col] =
+                    FieldState.get(str.charAt((row * 3 + col)));
+            }
+        }
     }
 
     boolean equalTo(TicTacToeField other) {
@@ -55,8 +71,7 @@ class TicTacToeField {
                 if (field[i][j] != other.field[i][j]) {
                     if (field[i][j] == FieldState.FREE && !improved) {
                         improved = true;
-                    }
-                    else {
+                    } else {
                         return false;
                     }
                 }
@@ -103,7 +118,7 @@ class TicTacToeField {
 
             int y = 0;
             for (String line : lines) {
-                char[] cols = new char[] {
+                char[] cols = new char[]{
                     line.charAt(2),
                     line.charAt(4),
                     line.charAt(6)
@@ -126,7 +141,6 @@ class TicTacToeField {
             return null;
         }
     }
-
 
     static List<TicTacToeField> parseAll(String output) {
         List<TicTacToeField> fields = new ArrayList<>();
@@ -158,11 +172,13 @@ class TicTacToeField {
 
         return fields;
     }
+
 }
 
 
 class Clue {
     int x, y;
+
     Clue(int x, int y) {
         this.x = x;
         this.y = y;
@@ -170,9 +186,6 @@ class Clue {
 }
 
 public class TicTacToeTest extends StageTest<Clue> {
-    public TicTacToeTest() throws Exception {
-        super(Main.class);
-    }
 
     static String[] inputs = new String[]{
         "1 1", "1 2", "1 3",
@@ -276,12 +289,12 @@ public class TicTacToeTest extends StageTest<Clue> {
 
     //exit check
     @DynamicTestingMethod
-    CheckResult exitCheck(){
+    CheckResult exitCheck() {
         TestedProgram main = new TestedProgram(Main.class);
         main.start();
 
         main.execute("exit");
-        if (!main.isFinished()){
+        if (!main.isFinished()) {
             return CheckResult.wrong("Your program did't finish after \"exit\" command");
         }
 
@@ -296,6 +309,7 @@ public class TicTacToeTest extends StageTest<Clue> {
             return CheckResult.wrong("The game field is incorrect");
         }
         try {
+            System.out.println(field.field[a][b]);
             if (!field.field[a][b].toString().toLowerCase().equals(mode)) {
                 return CheckResult.wrong("The " + mode.toUpperCase() + " was placed to a wrong position." +
                     "The " + mode.toUpperCase() + " symbol was not found (" + field.field[a][b] + " instead of it).");
@@ -312,11 +326,9 @@ public class TicTacToeTest extends StageTest<Clue> {
         int win = 0, draw = 0, lose = 0;
         int result;
         for (int i = 0; i < 50; i++) {
-            result = testGameSession("easy");
+            result = testGameSession("easy easy");
             if (result == -1) {
                 return CheckResult.wrong("An error in process of the game was found");
-            } else if (result == -2){
-                return CheckResult.wrong("Test bot ran out of input");
             } else if (result == 0) {
                 draw++;
             } else if (result == 1) {
@@ -328,18 +340,18 @@ public class TicTacToeTest extends StageTest<Clue> {
         if (win > 13) {
             return CheckResult.correct();
         } else {
-            return CheckResult.wrong("The difficulty of your AI is too high." +
+            return CheckResult.wrong("The difficulty of your easy AI is too high." +
                 "Make it easier.\n" +
                 "If you are sure the AI difficulty is fine, try to rerun the test.");
         }
     }
 
     @DynamicTestingMethod
-    CheckResult testOfMediumDifficulty(){
+    CheckResult testOfMediumDifficulty() {
         int win = 0, draw = 0, lose = 0;
         int result;
         for (int i = 0; i < 50; i++) {
-            result = testGameSession("medium");
+            result = testGameSession("medium medium");
             if (result == -1) {
                 return CheckResult.wrong("An error in process of the game was found");
             } else if (result == 0) {
@@ -353,9 +365,57 @@ public class TicTacToeTest extends StageTest<Clue> {
         if (win > 10) {
             return CheckResult.correct();
         } else {
-            return CheckResult.wrong("The difficulty of your AI is too high. " +
-                "Try to make it easier.\n" +
+            return CheckResult.wrong("The difficulty of your medium AI is too high." +
+                "Make it easier.\n" +
                 "If you are sure the AI difficulty is fine, try to rerun the test.");
+        }
+    }
+
+    @DynamicTestingMethod
+    CheckResult testOfHardDifficulty1() {
+        int win = 0, draw = 0, lose = 0;
+        int result;
+        for (int i = 0; i < 50; i++) {
+            result = testGameSession("hard hard");
+            if (result == -1) {
+                return CheckResult.wrong("An error in process of the game was found");
+            } else if (result == 0) {
+                draw++;
+            } else if (result == 1) {
+                win++;
+            } else if (result == 2) {
+                lose++;
+            }
+        }
+        if (draw > 40) {
+            return CheckResult.correct();
+        } else {
+            return CheckResult.wrong("The difficulty of your hard AI is too high. " +
+                "Make it easier.\n" +
+                "If you are sure the AI difficulty is fine, try to rerun the test.");
+        }
+    }
+
+    @DynamicTestingMethod
+    CheckResult testOfHardDifficulty2() {
+        int win = 0, draw = 0, lose = 0;
+        int result;
+        for (int i = 0; i < 50; i++) {
+            result = testGameSession("hard medium");
+            if (result == -1) {
+                return CheckResult.wrong("An error in process of the game was found");
+            } else if (result == 0) {
+                draw++;
+            } else if (result == 1) {
+                win++;
+            } else if (result == 2) {
+                lose++;
+            }
+        }
+        if (win > 35) {
+            return CheckResult.correct();
+        } else {
+            return CheckResult.wrong("The difficulty of your hard AI is too low.");
         }
     }
 
@@ -367,7 +427,7 @@ public class TicTacToeTest extends StageTest<Clue> {
 
         TestedProgram main = new TestedProgram(Main.class);
         main.start();
-        String output = main.execute("start " + mode + " " + mode);
+        String output = main.execute("start " + mode);
 
         while (!main.isFinished()) {
             if (output.contains("command:")){

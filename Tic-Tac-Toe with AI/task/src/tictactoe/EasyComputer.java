@@ -11,7 +11,7 @@ public class EasyComputer extends Computer {
     public void nextMove() {
         int xPos, yPos;
 
-        System.out.println("Making move level \"" + difficulty.getDifficulty() + "\"");
+        System.out.println("Making move level \"" + difficulty.getDifficulty() +"\"");
 
         do {
             xPos = getRandomNumber(0, 3);

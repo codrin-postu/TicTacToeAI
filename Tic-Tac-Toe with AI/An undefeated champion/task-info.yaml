@@ -475,6 +475,494 @@ files:
         }
     }
   learner_created: false
+- name: src/tictactoe/Board.java
+  visible: true
+  text: |
+    package tictactoe;
+
+    import java.awt.font.FontRenderContext;
+
+    public class Board {
+        char[][] boardArray;
+
+
+        public Board(char[] positions) {
+            boardArray = new char[3][3];
+
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 3; j++) {
+                    boardArray[i][j] = positions[i * 3 + j];
+                }
+            }
+        }
+
+        public char getCell(int coordX, int coordY) {
+            return  boardArray[coordX][coordY];
+        }
+
+        //Returns true - cell is available; false - cell is occupied;
+        public boolean checkCell(int coordX, int coordY) {
+            if (boardArray[coordX][coordY] == ' ') {
+                return true;
+            }
+            return false;
+        }
+
+        //returns the amount of chosen chars on the board: X, O
+        public int getCellCount(char cellType) {
+            int count = 0;
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 3; j++) {
+                    if (boardArray[i][j] == cellType) {
+                        count++;
+                    }
+                }
+            }
+            return count;
+        }
+
+        public char nextCell() {
+            if (getCellCount('X') > getCellCount('O')) {
+                return 'O';
+            } else {
+                return 'X';
+            }
+        }
+
+        public void addCell(int coordX, int coordY) {
+            if (getCellCount('X') > getCellCount('O')) {
+                boardArray[coordX][coordY] = 'O';
+            } else {
+                boardArray[coordX][coordY] = 'X';
+            }
+        }
+
+        public void outputBoard() {
+            System.out.println("---------");
+            for (int i = 0; i < 3; i++) {
+                System.out.println("| " +
+                        boardArray[i][0] + " " +
+                        boardArray[i][1] + " " +
+                        boardArray[i][2] + " " +
+                        "|");
+            }
+            System.out.println("---------");
+        }
+
+        public boolean checkBoardStatus() {
+            for (int i = 0; i < 3; i++) {
+                if (boardArray[i][0] == boardArray[i][1]
+                        && boardArray[i][1] == boardArray[i][2]
+                        && boardArray[i][0] != ' '
+                ) {
+                    outputBoard();
+                    System.out.println(boardArray[i][0] + " wins");
+                    return true;
+                }
+                if (boardArray[0][i] == boardArray[1][i]
+                        && boardArray[1][i] == boardArray[2][i]
+                        && boardArray[0][i] != ' '
+                ) {
+                    outputBoard();
+                    System.out.println(boardArray[0][i] + " wins");
+                    return true;
+                }
+            }
+
+            if (boardArray[0][0] == boardArray[1][1]
+                    && boardArray[1][1] == boardArray[2][2]
+                    && boardArray[0][0] != ' '
+            ) {
+                outputBoard();
+                System.out.println(boardArray[0][0] + " wins");
+                return true;
+            }
+
+            if (boardArray[0][2] == boardArray[1][1]
+                    && boardArray[1][1] == boardArray[2][0]
+                    && boardArray[0][2] != ' '
+            ) {
+                outputBoard();
+                System.out.println(boardArray[0][2] + " wins");
+                return true;
+            }
+
+            if (getCellCount('X') + getCellCount('O') == 9) {
+                outputBoard();
+                System.out.println("Draw");
+                return true;
+            }
+
+            return false;
+
+        }
+    }
+  learner_created: true
+- name: src/tictactoe/Difficulty.java
+  visible: true
+  text: |
+    package tictactoe;
+
+    public enum Difficulty {
+        EASY("easy"),
+        MEDIUM("medium"),
+        HARD("hard"),
+        ;
+
+        private String diff;
+
+        Difficulty(String diff) {
+            this.diff = diff;
+        }
+
+        public String getDifficulty() {
+            return diff;
+        }
+    }
+  learner_created: true
+- name: src/tictactoe/MediumComputer.java
+  visible: true
+  text: |
+    package tictactoe;
+
+    public class MediumComputer extends Computer {
+
+        public MediumComputer(Board board) {
+            super(board);
+            difficulty = Difficulty.MEDIUM;
+        }
+
+        @Override
+        public void nextMove() {
+            System.out.println("Making move level \"medium\"");
+            char userCellType = board.nextCell();
+            char opponentCellType = userCellType == 'X' ? 'O' : 'X';
+
+            if (verifyMove(userCellType)) return;
+            if (verifyMove(opponentCellType)) return;
+            randomMove();
+        }
+
+        private void randomMove() {
+            int xPos, yPos;
+
+            do {
+                xPos = getRandomNumber(0, 3);
+                yPos = getRandomNumber(0, 3);
+            } while (!board.checkCell(xPos, yPos));
+
+            board.addCell(xPos, yPos);
+
+        }
+
+        //Checks if it has moves where it can win. If it does, it will add the cell and return true.
+        //TODO: Change all the if's to something more readable
+        private boolean verifyMove(char cellType) {
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 3; j++) {
+                    if (board.getCell(i, j) == ' ') {
+                        if (checkRow(i, j, cellType) || checkCollumn(i, j, cellType)) {
+                            board.addCell(i, j);
+                            return true;
+                        }
+                        if (Math.abs(i - j) == 0 && i + j == 2 && (checkPrimaryDiagonal(i, cellType) || checkSecondaryDiagonal(i, cellType))) {
+                            board.addCell(i, j);
+                            return true;
+                        } else if (Math.abs(i - j) == 0 && checkPrimaryDiagonal(i, cellType)) {
+                            board.addCell(i, j);
+                            return true;
+                        } else if (i + j == 2 && checkSecondaryDiagonal(i, cellType)) {
+                            board.addCell(i, j);
+                            return true;
+                        }
+                    }
+                }
+            }
+            return false;
+        }
+
+
+        private boolean checkRow(int xCoord, int yCoord, char cellType) {
+            var sameCellCount = 0;
+
+            for (int i = 0; i < 3; i++) {
+                if (cellType == board.getCell(xCoord, i) && i != yCoord) {
+                    sameCellCount++;
+                }
+            }
+            if (sameCellCount == 2) {
+                return true;
+            }
+            return false;
+        }
+
+        private boolean checkCollumn(int xCoord, int yCoord, char cellType) {
+            var sameCellCount = 0;
+
+            for (int i = 0; i < 3; i++) {
+                if (cellType == board.getCell(i, yCoord) && i != xCoord) {
+                    sameCellCount++;
+                }
+            }
+            if (sameCellCount == 2) {
+                return true;
+            }
+            return false;
+        }
+
+        private boolean checkSecondaryDiagonal(int xCoord, char cellType) {
+            var sameCellCount = 0;
+
+            for (int i = 0; i < 3; i++) {
+                if (cellType == board.getCell(i, 3 - i - 1) && i != xCoord) {
+                    sameCellCount++;
+                }
+            }
+            if (sameCellCount == 2) {
+                return true;
+            }
+            return false;
+        }
+
+        private boolean checkPrimaryDiagonal(int xCoord, char cellType) {
+            var sameCellCount = 0;
+
+            for (int i = 0; i < 3; i++) {
+                if (cellType == board.getCell(i, i) && i != xCoord) {
+                    sameCellCount++;
+                }
+            }
+            if (sameCellCount == 2) {
+                return true;
+            }
+            return false;
+        }
+    }
+  learner_created: true
+- name: src/tictactoe/EasyComputer.java
+  visible: true
+  text: |
+    package tictactoe;
+
+    public class EasyComputer extends Computer {
+
+        public EasyComputer(Board board) {
+            super(board);
+            difficulty = Difficulty.EASY;
+        }
+
+        @Override
+        public void nextMove() {
+            int xPos, yPos;
+
+            System.out.println("Making move level \"" + difficulty.getDifficulty() + "\"");
+
+            do {
+                xPos = getRandomNumber(0, 3);
+                yPos = getRandomNumber(0, 3);
+            } while (!board.checkCell(xPos, yPos));
+
+            board.addCell(xPos, yPos);
+
+        }
+    }
+  learner_created: true
+- name: src/tictactoe/Computer.java
+  visible: true
+  text: |
+    package tictactoe;
+
+    public abstract class Computer extends Player {
+
+        Difficulty difficulty;
+
+        public Computer(Board board) {
+            super(board);
+        }
+
+
+        public int getRandomNumber(int min, int max) {
+            return (int) ((Math.random() * (max - min)) + min);
+        }
+    }
+  learner_created: true
+- name: src/tictactoe/Player.java
+  visible: true
+  text: |
+    package tictactoe;
+
+    public abstract class Player {
+
+        protected Board board;
+
+        public Player(Board board) {
+            this.board = board;
+        }
+
+        abstract void nextMove();
+    }
+  learner_created: true
+- name: src/tictactoe/Game.java
+  visible: true
+  text: |
+    package tictactoe;
+
+    import java.util.ArrayList;
+    import java.util.Scanner;
+
+    public class Game {
+
+        ArrayList<Player> players;
+        Board board;
+
+        public Game(ArrayList<PlayerType> players) {
+
+            char[] cells = new char[9];
+
+            for (int i = 0; i < 9; i++) {
+                cells[i] = ' ';
+            }
+
+            board = new Board(cells);
+
+            this.players = new ArrayList<>();
+
+            for (int i = 0; i < 2; i++) {
+                switch (players.get(i)) {
+                    case COMPUTER_EASY:
+                        this.players.add(new EasyComputer(board));
+                        break;
+                    case COMPUTER_MEDIUM:
+                        this.players.add(new MediumComputer(board));
+                        break;
+                    case COMPUTER_HARD:
+                        this.players.add(new HardComputer(board));
+                        break;
+                    case USER:
+                        this.players.add(new User(board));
+                        break;
+                }
+            }
+        }
+
+        public void nextRound() {
+            Scanner scanner = new Scanner(System.in);
+
+            for (int i = 0; i < 2; i++) {
+                board.outputBoard();
+                players.get(i).nextMove();
+
+                if (board.checkBoardStatus()) {
+                    return;
+                }
+            }
+
+            nextRound();
+
+        }
+    }
+  learner_created: true
+- name: src/tictactoe/HardComputer.java
+  visible: true
+  text: |
+    package tictactoe;
+
+    public class HardComputer extends Computer {
+
+        public HardComputer(Board board) {
+            super(board);
+            difficulty = Difficulty.HARD;
+        }
+
+        @Override
+        public void nextMove() {
+            int xPos, yPos;
+
+            System.out.println("Making move level \"easy\"");
+
+            do {
+                xPos = getRandomNumber(0, 3);
+                yPos = getRandomNumber(0, 3);
+            } while (!board.checkCell(xPos, yPos));
+
+            board.addCell(xPos, yPos);
+
+        }
+    }
+  learner_created: true
+- name: src/tictactoe/User.java
+  visible: true
+  text: |
+    package tictactoe;
+
+    import java.util.Scanner;
+
+    public class User extends Player {
+
+        public User(Board board) {
+            super(board);
+        }
+
+        @Override
+        void nextMove() {
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print("Enter the coordinates: ");
+
+            int[] input = new int[2];
+
+            for (int i = 0; i < 2; i++) {
+                input[i] = getInput(scanner);
+                if (input[i] == -1) {
+                    nextMove();
+                    return;
+                }
+            }
+
+            if (!board.checkCell(input[0], input[1])) {
+                System.out.println("This cell is occupied! Choose another one!");
+                nextMove();
+                return;
+            }
+
+            board.addCell(input[0], input[1]);
+        }
+
+        private static int getInput(Scanner scanner) {
+            int value = -1; //means error if returned
+            if (!scanner.hasNextInt()) {
+                System.out.println(scanner.next()); // WHY?!?
+                System.out.println("\nYou should enter numbers!");
+                return -1;
+            }
+            value = scanner.nextInt();
+
+            if (value <= 0 || value >= 4) {
+                System.out.println("Coordinates should be from 1 to 3!");
+                return -1;
+            }
+
+            return value - 1;
+        }
+
+    }
+  learner_created: true
+- name: src/tictactoe/PlayerType.java
+  visible: true
+  text: |
+    package tictactoe;
+
+    public enum PlayerType {
+        USER,
+        COMPUTER_EASY,
+        COMPUTER_MEDIUM,
+        COMPUTER_HARD,
+    }
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/81/stages/451/implement
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations! Continue on <a href="https://hyperskill.org/projects/81/stages/451/implement">JetBrains
+    Academy</a>
+  time: Wed, 16 Dec 2020 20:34:31 UTC
 record: -1

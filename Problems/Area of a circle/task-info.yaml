@@ -1,0 +1,27 @@
+type: code
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    import java.util.Scanner; // do not remove the import
+
+    class Circle {
+        private double radius;
+
+        public Circle(double radius) {
+            this.radius = radius;
+        }
+    }
+
+    // do not change the interface
+    interface Measurable {
+        double area();
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/11362
+status: Solved
+feedback:
+  message: <html>Correct solution<br/><br/>Continue on <a href="https://hyperskill.org/learn/step/11362">JetBrains
+    Academy</a></html>
+  time: Wed, 16 Dec 2020 15:30:16 UTC
+record: -1
